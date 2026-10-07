@@ -1,0 +1,147 @@
+{
+  "_file": "core/Bradley Morgan Stanley JTWROS.pdf",
+  "_format": "vector PDF (text layer) with a multi-section structure: 6-page consolidated summary, then account statements with their own 'Page x of y' numbering (Active Assets 1-6, Select UMA 1-4)",
+  "doc_type": "custodian_statement",
+  "doc_date": "2025-10-31",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "person",
+      "name": "Robert W Bradley II",
+      "identifiers": {},
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "ref": "m2",
+      "kind": "person",
+      "name": "Catherine M Bradley",
+      "identifiers": {},
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "ref": "m3",
+      "kind": "account",
+      "name": "Morgan Stanley Active Assets ...7118",
+      "identifiers": {
+        "custodian": "Morgan Stanley",
+        "account_last4": "7118"
+      },
+      "page": 5,
+      "quote": "228-104477-118 Active Assets Account - Brokerage"
+    },
+    {
+      "ref": "m4",
+      "kind": "account",
+      "name": "Morgan Stanley Select UMA ...1118",
+      "identifiers": {
+        "custodian": "Morgan Stanley",
+        "account_last4": "1118"
+      },
+      "page": 5,
+      "quote": "228-104491-118 Portfolio Management - Select UMA - Advisory"
+    },
+    {
+      "ref": "m5",
+      "kind": "account",
+      "name": "Morgan Stanley Alternative Investments ...3118",
+      "identifiers": {
+        "custodian": "Morgan Stanley",
+        "account_last4": "3118"
+      },
+      "page": 5,
+      "quote": "228-104503-118 Alternative Investments - Brokerage"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m3",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "subject_ref": "m2",
+      "role": "owner",
+      "object_ref": "m3",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m4",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "subject_ref": "m2",
+      "role": "owner",
+      "object_ref": "m4",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m5",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    },
+    {
+      "subject_ref": "m2",
+      "role": "owner",
+      "object_ref": "m5",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "Robert W Bradley Il Catherine M Bradley JTWROS"
+    }
+  ],
+  "unreadable_notes": [
+    "Account number for the Active Assets account is printed as 228-104474-118 in the 'Change in the value of your accounts' table (page 5 of the summary) but 228-104477-118 everywhere else."
+  ],
+  "_traps": [
+    "The registration is PRINTED as 'Robert W Bradley Il' (lower-case L): the drawn glyphs and the text layer agree, and the 'l' is only slightly taller than an 'I'. This is not an OCR error. The gold deliberately names him 'Robert W Bradley II' (the suffix intended) while its quotes keep the printed 'Il'.",
+    "An extractor that copies the name faithfully ('Robert W Bradley Il') gets no match: 'il' is neither equal to 'ii' nor a substring of it, and the surname check compares 'il' with 'ii'. _names_resemble returns False and a second Robert is created silently, with no question.",
+    "Typo account number 228-104474-118 (last4 4118) matches no account: it is the Active Assets account misprinted, not a fourth account.",
+    "Three accounts sharing the same suffix (-118); last4 values are 7118 / 1118 / 3118.",
+    "Page numbering restarts per section (Page 1 of 6, then Page 1 of 6, then Page 1 of 4); page 2 is blank.",
+    "The Alternatives account has no account-level section; its registration comes only from the consolidated summary."
+  ],
+  "_expected_questions": [
+    {
+      "kind": "unreadable",
+      "about": "Account number typo 228-104474-118 vs 228-104477-118."
+    },
+    {
+      "kind": "possible_duplicate",
+      "about": "'Robert W Bradley II' / 'Catherine M Bradley' vs existing people (name-only)."
+    }
+  ],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 11,
+    "quotes": 11,
+    "pages": 16,
+    "pages_without_text": []
+  }
+}

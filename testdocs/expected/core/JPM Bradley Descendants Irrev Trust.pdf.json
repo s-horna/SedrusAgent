@@ -1,0 +1,120 @@
+{
+  "_file": "core/JPM Bradley Descendants Irrev Trust.pdf",
+  "_format": "scanned landscape statement, corrupted OCR text layer; printed 'Page n of 20' but only pages 1-16 present; pages 6 and 10 blank",
+  "doc_type": "custodian_statement",
+  "doc_date": "2025-10-31",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "trust",
+      "name": "BRADLEY DESCENDANTS IRREVOCABLE TRUST",
+      "identifiers": {
+        "trust_date": "2016-09-14"
+      },
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE"
+    },
+    {
+      "ref": "m2",
+      "kind": "person",
+      "name": "REBECCA L. BRADLEY",
+      "identifiers": {},
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE"
+    },
+    {
+      "ref": "m3",
+      "kind": "account",
+      "name": "J.P. Morgan Trust Portfolio ...7310",
+      "identifiers": {
+        "custodian": "J.P. Morgan",
+        "account_last4": "7310"
+      },
+      "page": 2,
+      "quote": "PORTFOLIO NUMBER : 448-17731-0"
+    },
+    {
+      "ref": "m4",
+      "kind": "account",
+      "name": "J.P. Morgan Trust Brokerage ...7328",
+      "identifiers": {
+        "custodian": "J.P. Morgan",
+        "account_last4": "7328"
+      },
+      "page": 2,
+      "quote": "BRADLEY DESCENDANTS IRREV TR BRKG 448-17732-8"
+    },
+    {
+      "ref": "m5",
+      "kind": "account",
+      "name": "J.P. Morgan Trust Portfolio ...7336",
+      "identifiers": {
+        "custodian": "J.P. Morgan",
+        "account_last4": "7336"
+      },
+      "page": 2,
+      "quote": "BRADLEY DESCENDANTS IRREV TR 448-17733-6"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m2",
+      "role": "trustee",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE"
+    },
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST"
+    },
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m4",
+      "qualifiers": {},
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE"
+    },
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m5",
+      "qualifiers": {},
+      "page": 11,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE"
+    }
+  ],
+  "unreadable_notes": [
+    "Statement shows pages 1-16 of 20; pages 17-20 (bank statement, fees, disclosures) are missing."
+  ],
+  "_traps": [
+    "CONFLICT: registration says 'U/A DTD 09/14/2016' but the trust agreement is dated June 3, 2020. Same trust name, different trust_date. The skeleton's resolver treats a differing trust_date as 'provably different' and would silently create a SECOND trust - the correct outcome is a conflict question.",
+    "Mailed to 'REBECCA L. BRADLEY, 410 Quail Hollow RD' - the addressee is the trustee, not an account holder.",
+    "Consolidated summary portfolio (448-17731-0, shown masked as XXX-X7731-0 in the footer) plus two sub-accounts; the zero-balance BRKG sub-account is still an account.",
+    "Masked footer numbers (XXX-X7733-6) vs unmasked numbers on General Information pages. The trailing '-0/-8/-6' digit makes last4 ambiguous (7310 vs 7731); gold uses the last 4 digits of the full string.",
+    "OCR layer has errors (USO for USD, Dct for Oct, (Lossl ...)."
+  ],
+  "_expected_questions": [
+    {
+      "kind": "conflict",
+      "about": "Trust date 2016-09-14 (custodian registration) vs 2020-06-03 (trust agreement) for the Bradley Descendants Irrevocable Trust."
+    },
+    {
+      "kind": "unreadable",
+      "about": "Pages 17-20 of 20 missing."
+    }
+  ],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 7,
+    "quotes": 9,
+    "pages": 16,
+    "pages_without_text": []
+  }
+}

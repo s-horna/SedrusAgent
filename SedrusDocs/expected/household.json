@@ -1,0 +1,196 @@
+{
+  "_about": "Expected records for the Smith household after each ingest batch (cumulative, one state file). Keys like P_JOHN are labels for this answer key only (the agent's IDs will differ). 'sources' lists the documents that should back each fact. 'predicted_deviations' is what I expect the CURRENT resolver to do differently from this target, written before running it.",
+
+  "documents": {
+    "batch1/Smith_Children_Irrevocable_Trust_Agreement.pdf": {"id": "doc_190a29a763b98e39", "doc_type": "trust_agreement", "doc_date": "2019-04-12"},
+    "batch1/TEST Family 1040.pdf": {"id": "doc_7986075d0b1bc8a2", "doc_type": "tax_return", "doc_date": "2024-12-31 (tax year 2024; null acceptable)"},
+    "batch2/RJ Smith JTWROS.pdf": {"id": "doc_4bdad674e7608aa9", "doc_type": "custodian_statement", "doc_date": "2025-10-31"},
+    "batch2/RJ John Smith Roth x0832.pdf": {"id": "doc_dde3ed4d2cd84f56", "doc_type": "custodian_statement", "doc_date": "2025-09-30"},
+    "batch2/GS Smith Children Irrev Trust.pdf": {"id": "doc_d279e45da59d03f5", "doc_type": "custodian_statement", "doc_date": "2025-10-31"},
+    "batch2/GS Smith Stmt.pdf": {"id": "doc_7ab70391756ce73a", "doc_type": "custodian_statement", "doc_date": "2025-10-31"},
+    "batch3/Smith UBS JTWROS.pdf": {"id": "doc_87f15e3bf8361112", "doc_type": "custodian_statement", "doc_date": "2025-10-31"},
+    "batch3/ComputerShare - Exxon.pdf": {"id": "doc_511885623436b08b", "doc_type": "custodian_statement", "doc_date": "2025-06-10"}
+  },
+
+  "after_batch1": {
+    "_ingest": "ledgerline ingest SedrusDocs/batch1 --state SedrusDocs/state.json",
+    "people": [
+      {"key": "P_JOHN", "name": "John D. Smith III", "identifiers": {"ssn_last4": "5555"},
+       "aliases_seen": ["JOHN D. SMITH III", "JOHN D SMITHIII (1040)"],
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf", "TEST Family 1040.pdf"]},
+      {"key": "P_JANE", "name": "Jane S. Smith", "identifiers": {"ssn_last4": "9999"},
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf", "TEST Family 1040.pdf"]},
+      {"key": "P_JORDAN", "name": "Jordan A. Smith",
+       "_note": "Trustee. Lives at 123 (not 1234) Sage Mountain Road, Atlanta 31210. Never merge with Jane or John.",
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf"]},
+      {"key": "P_WILLIAM", "name": "William D. Smith", "identifiers": {"dob": "2004-06-03", "ssn_last4": "1111"},
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf", "TEST Family 1040.pdf"]},
+      {"key": "P_EMMETT", "name": "Emmett P. Smith", "identifiers": {"dob": "2006-11-19", "ssn_last4": "2222"},
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf", "TEST Family 1040.pdf"]},
+      {"key": "P_ELIZABETH", "name": "Elizabeth E. Smith", "identifiers": {"dob": "2011-02-08"},
+       "_note": "The 1040 prints her SSN as 333-333-3333 (10 digits), so it gives no ssn_last4.",
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf", "TEST Family 1040.pdf"]},
+      {"key": "P_MARGARET", "name": "Margaret E. Caldwell", "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf"]}
+    ],
+    "trusts": [
+      {"key": "T_SCIT", "name": "The Smith Children Irrevocable Trust",
+       "identifiers": {"trust_date": "2019-04-12", "ein_last4": "2093 (optional; ein_last4 is listed for companies)"},
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf"]}
+    ],
+    "companies": [
+      {"key": "C_SMH", "name": "Sage Mountain Holdings, Inc.", "_note": "Schedule A: 1,200 shares of common stock.",
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf"]}
+    ],
+    "accounts": [
+      {"key": "A_GS_TRUST_SUM", "name": "Goldman Sachs ...0002 (Portfolio No. XXX-XX000-2)", "identifiers": {"custodian": "Goldman Sachs", "account_last4": "0002"},
+       "sources": ["Smith_Children_Irrevocable_Trust_Agreement.pdf"]}
+    ],
+    "roles": [
+      {"subject": "P_JOHN", "role": "grantor", "object": "T_SCIT"},
+      {"subject": "P_JANE", "role": "grantor", "object": "T_SCIT"},
+      {"subject": "P_JORDAN", "role": "trustee", "object": "T_SCIT", "status": "active"},
+      {"subject": "P_MARGARET", "role": "successor_trustee", "object": "T_SCIT"},
+      {"subject": "P_WILLIAM", "role": "beneficiary", "object": "T_SCIT"},
+      {"subject": "P_EMMETT", "role": "beneficiary", "object": "T_SCIT"},
+      {"subject": "P_ELIZABETH", "role": "beneficiary", "object": "T_SCIT"},
+      {"subject": "P_JOHN", "role": "spouse_of", "object": "P_JANE"},
+      {"subject": "P_WILLIAM", "role": "child_of", "object": "P_JOHN"}, {"subject": "P_WILLIAM", "role": "child_of", "object": "P_JANE"},
+      {"subject": "P_EMMETT", "role": "child_of", "object": "P_JOHN"}, {"subject": "P_EMMETT", "role": "child_of", "object": "P_JANE"},
+      {"subject": "P_ELIZABETH", "role": "child_of", "object": "P_JOHN"}, {"subject": "P_ELIZABETH", "role": "child_of", "object": "P_JANE"},
+      {"subject": "T_SCIT", "role": "owner", "object": "C_SMH", "qualifiers": {"shares": "1,200"}},
+      {"subject": "T_SCIT", "role": "owner", "object": "A_GS_TRUST_SUM"}
+    ],
+    "questions": [
+      {"kind": "unreadable", "about": "Malformed dependent SSN for ELIZABETH E SMITH (10 digits).", "raised_by": "TEST Family 1040.pdf"}
+    ],
+    "document_status": {"Smith_Children_Irrevocable_Trust_Agreement.pdf": "processed", "TEST Family 1040.pdf": "needs_review"},
+    "predicted_deviations": [
+      "Jordan A. Smith vs Jane S. Smith: same surname + same first initial 'J' makes _names_resemble true. Whichever is placed second in the trust agreement is held as a possible_duplicate of the other, along with its roles (most likely Jordan, so the trustee claim is held). Trust agreement goes to needs_review.",
+      "Emmett P. Smith vs Elizabeth E. Smith on the 1040: same surname + initial 'E'. In the trust agreement they're kept apart by different DOBs, but the 1040 gives SSN only, so both existing entities are 'can't tell' lookalikes. Expect a possible_duplicate question for each of them on the 1040, holding their child_of claims.",
+      "If the model omits the suffix ('John D Smith') anywhere, that mention resembles 'John D. Smith III' without matching exactly and becomes a question."
+    ],
+    "must_not": [
+      "Jordan A. Smith merged with Jane S. Smith or John D. Smith III (123 vs 1234 Sage Mountain Rd).",
+      "John or Jane as trustee of the trust (Section 2.2 forbids it).",
+      "Halloran & Fitch LLP, Goldman Sachs, the notary or the witnesses (Rebecca L. Ainsworth, Peter M. Nakagawa) as entities with roles.",
+      "An ssn_last4 for Elizabeth.",
+      "A full SSN stored anywhere."
+    ]
+  },
+
+  "after_batch2": {
+    "_ingest": "ledgerline ingest SedrusDocs/batch2 --state SedrusDocs/state.json",
+    "_carried": "Everything in after_batch1, plus:",
+    "people_updates": [
+      {"key": "P_JOHN", "add_sources": ["RJ Smith JTWROS.pdf", "RJ John Smith Roth x0832.pdf"],
+       "aliases_seen_add": ["SMITH III, JOHN D.", "JOHN D.SMITH (suffix dropped in RJ registration)", "JOHN D SMITH III"]},
+      {"key": "P_JANE", "add_sources": ["RJ Smith JTWROS.pdf", "RJ John Smith Roth x0832.pdf"]},
+      {"key": "P_JORDAN", "add_sources": ["GS Smith Children Irrev Trust.pdf"]},
+      {"key": "P_WILLIAM", "add_sources": ["RJ John Smith Roth x0832.pdf"]},
+      {"key": "P_EMMETT", "add_sources": ["RJ John Smith Roth x0832.pdf"]},
+      {"key": "P_ELIZABETH", "add_sources": ["RJ John Smith Roth x0832.pdf"]}
+    ],
+    "trust_updates": [
+      {"key": "T_SCIT", "identifiers": {"trust_date": "2019-04-12"},
+       "_note": "Still exactly ONE trust. GS's 'DTD 12/19/2014' (OCR: 'OTO') is a date conflict; the trust agreement's date stays.",
+       "add_sources": ["GS Smith Children Irrev Trust.pdf"]}
+    ],
+    "new_companies": [
+      {"key": "C_SIC", "name": "Smith Investment Company, LP",
+       "_note": "Known only as the GS account holder. No document says who owns or controls it.",
+       "sources": ["GS Smith Stmt.pdf"]}
+    ],
+    "new_accounts": [
+      {"key": "A_GS_TRUST_BRKG", "name": "Goldman Sachs Brokerage ...0003 (111-00000-3, zero balance)", "identifiers": {"custodian": "Goldman Sachs", "account_last4": "0003"},
+       "sources": ["GS Smith Children Irrev Trust.pdf"]},
+      {"key": "A_GS_TRUST_MAIN", "name": "Goldman Sachs ...0004 (333-00000-4)", "identifiers": {"custodian": "Goldman Sachs", "account_last4": "0004"},
+       "sources": ["GS Smith Children Irrev Trust.pdf"]},
+      {"key": "A_GS_LP", "name": "Goldman Sachs ...0005 (555-00000-5)", "identifiers": {"custodian": "Goldman Sachs", "account_last4": "0005"},
+       "sources": ["GS Smith Stmt.pdf"]},
+      {"key": "A_RJ_ROTH", "name": "Raymond James Roth IRA ...0001 (000L0001)", "identifiers": {"custodian": "Raymond James", "account_last4": "0001"},
+       "_note": "The filename says x0832; the document says 000L0001. Never create an ...0832 account.",
+       "sources": ["RJ John Smith Roth x0832.pdf"]},
+      {"key": "A_RJ_JOINT", "name": "Raymond James JTWROS ...5678 (12345678)", "identifiers": {"custodian": "Raymond James", "account_last4": "5678"},
+       "sources": ["RJ Smith JTWROS.pdf"]}
+    ],
+    "account_updates": [
+      {"key": "A_GS_TRUST_SUM", "add_sources": ["GS Smith Children Irrev Trust.pdf"], "_note": "Linked by custodian + last4 from Schedule A; not a new account."}
+    ],
+    "new_roles": [
+      {"subject": "T_SCIT", "role": "owner", "object": "A_GS_TRUST_BRKG"},
+      {"subject": "T_SCIT", "role": "owner", "object": "A_GS_TRUST_MAIN"},
+      {"subject": "C_SIC", "role": "owner", "object": "A_GS_LP"},
+      {"subject": "P_JOHN", "role": "owner", "object": "A_RJ_ROTH", "qualifiers": {"account_type": "Roth IRA"}},
+      {"subject": "P_JANE", "role": "beneficiary", "object": "A_RJ_ROTH", "qualifiers": {"designation": "primary", "share": "100.00%"}},
+      {"subject": "P_WILLIAM", "role": "beneficiary", "object": "A_RJ_ROTH", "qualifiers": {"designation": "contingent", "share": "33.34%"}},
+      {"subject": "P_EMMETT", "role": "beneficiary", "object": "A_RJ_ROTH", "qualifiers": {"designation": "contingent", "share": "33.33%"}},
+      {"subject": "P_ELIZABETH", "role": "beneficiary", "object": "A_RJ_ROTH", "qualifiers": {"designation": "contingent", "share": "33.33%"}},
+      {"subject": "P_JOHN", "role": "owner", "object": "A_RJ_JOINT", "qualifiers": {"ownership": "JTWROS"}},
+      {"subject": "P_JANE", "role": "owner", "object": "A_RJ_JOINT", "qualifiers": {"ownership": "JTWROS"}}
+    ],
+    "role_updates": [
+      {"subject": "P_JORDAN", "role": "trustee", "object": "T_SCIT", "add_sources": ["GS Smith Children Irrev Trust.pdf"], "status": "active"},
+      {"subject": "T_SCIT", "role": "owner", "object": "A_GS_TRUST_SUM", "add_sources": ["GS Smith Children Irrev Trust.pdf"]}
+    ],
+    "new_questions": [
+      {"kind": "conflict", "about": "Trust date for the Smith Children Irrevocable Trust: 2019-04-12 (trust agreement) vs 2014-12-19 (GS registration 'DTD 12/19/2014').", "raised_by": "GS Smith Children Irrev Trust.pdf"},
+      {"kind": "unreadable", "about": "Pages 19-22 of 22 missing (pages 6 and 10 blank).", "raised_by": "GS Smith Children Irrev Trust.pdf"},
+      {"kind": "unreadable", "about": "OPTIONAL: filename says x0832 but the account number is 000L0001.", "raised_by": "RJ John Smith Roth x0832.pdf"}
+    ],
+    "predicted_deviations": [
+      "If Jordan was held in batch 1, the GS trust statement's 'JORDAN A. SMITH' again resembles Jane: a new possible_duplicate, and the trustee claim is held again.",
+      "Roth beneficiaries 'Emmett P Smith' and 'Elizabeth E Smith' (no identifiers) each resemble both Emmett and Elizabeth: two possible_duplicate questions; their contingent beneficiary claims are held.",
+      "RJ JTWROS: if the model takes the address-block 'JOHN D.SMITH' rather than 'SMITH III, JOHN D.', the mention resembles John without an exact match: possible_duplicate, owner claim held.",
+      "GS 'OTO 12/19/2014' may be read as no date at all, in which case the trust links by exact name and no date conflict is raised (a miss)."
+    ],
+    "must_not": [
+      "Two Smith Children Irrevocable Trusts.",
+      "A second Goldman Sachs ...0002 account (Schedule A's XXX-XX000-2 and the statement's 222-00000-2 are the same).",
+      "An account with last4 0832.",
+      "Smith Investment Company, LP linked to John, Jane or the trust.",
+      "Raymond James, RJ Trust Co NH, Goldman Sachs, or the advisors (Jim/Scott Burnett, GS team) as entities."
+    ]
+  },
+
+  "after_batch3": {
+    "_ingest": "ledgerline ingest SedrusDocs/batch3 --state SedrusDocs/state.json",
+    "_carried": "Everything in after_batch2, plus:",
+    "people_updates": [
+      {"key": "P_JOHN", "add_sources": ["Smith UBS JTWROS.pdf", "ComputerShare - Exxon.pdf"],
+       "aliases_seen_add": ["John D Smith Ill (UBS prints 'Ill' for 'III')"]},
+      {"key": "P_JANE", "add_sources": ["Smith UBS JTWROS.pdf"]}
+    ],
+    "new_accounts": [
+      {"key": "A_UBS_MAP", "name": "UBS MAP Equity ...1139 (1T 19511 39)", "identifiers": {"custodian": "UBS", "account_last4": "1139"},
+       "sources": ["Smith UBS JTWROS.pdf"]},
+      {"key": "A_UBS_ALTS", "name": "UBS Alts RMA ...2239 (2T 00222 39)", "identifiers": {"custodian": "UBS", "account_last4": "2239"},
+       "sources": ["Smith UBS JTWROS.pdf"]},
+      {"key": "A_UBS_LIQ", "name": "UBS Liquidity RMA ...3339 (3T 19333 39)", "identifiers": {"custodian": "UBS", "account_last4": "3339"},
+       "_note": "Listed in the portfolio summary only (statement suppressed). Missing it is a minor miss.",
+       "sources": ["Smith UBS JTWROS.pdf"]},
+      {"key": "A_CPU_DSPP", "name": "Computershare DSPP holder account ...3222 (C0000333222)", "identifiers": {"custodian": "Computershare", "account_last4": "3222"},
+       "sources": ["ComputerShare - Exxon.pdf"]}
+    ],
+    "new_roles": [
+      {"subject": "P_JOHN", "role": "owner", "object": "A_UBS_MAP", "qualifiers": {"ownership": "JTWROS"}}, {"subject": "P_JANE", "role": "owner", "object": "A_UBS_MAP", "qualifiers": {"ownership": "JTWROS"}},
+      {"subject": "P_JOHN", "role": "owner", "object": "A_UBS_ALTS", "qualifiers": {"ownership": "JTWROS"}}, {"subject": "P_JANE", "role": "owner", "object": "A_UBS_ALTS", "qualifiers": {"ownership": "JTWROS"}},
+      {"subject": "P_JOHN", "role": "owner", "object": "A_UBS_LIQ", "qualifiers": {"ownership": "JTWROS"}}, {"subject": "P_JANE", "role": "owner", "object": "A_UBS_LIQ", "qualifiers": {"ownership": "JTWROS"}},
+      {"subject": "P_JOHN", "role": "owner", "object": "A_CPU_DSPP"}
+    ],
+    "new_questions": [
+      {"kind": "unreadable", "about": "Account number printed differently: '1T 19511 39' (summary, MAP Equity statement) vs '4T 19521 39' (change-in-value table).", "raised_by": "Smith UBS JTWROS.pdf"},
+      {"kind": "unreadable", "about": "Page 4 of 4 missing (and page 3 has no text layer).", "raised_by": "ComputerShare - Exxon.pdf"}
+    ],
+    "final_counts": {"people": 7, "trusts": 1, "companies": 2, "accounts": 10},
+    "predicted_deviations": [
+      "UBS 'John D Smith Ill': normalized 'john d smith ill' neither equals nor resembles 'john d smith iii' (last tokens 'ill' vs 'iii'), so unless the model corrects it to III, the resolver CREATES a second John and attaches the UBS ownership to him. This is the most likely real error in the run.",
+      "The 4T transfer accounts (4T 00642 41, 4T 19521 91) are counterparties, not household accounts; a model may still emit them."
+    ],
+    "must_not": [
+      "A second John D. Smith III (from 'Ill').",
+      "A UBS ...2139 account created from the typo 4T 19521 39.",
+      "Exxon Mobil Corporation as a household company.",
+      "UBS, Computershare or Wilfong Gage Group as entities."
+    ]
+  }
+}

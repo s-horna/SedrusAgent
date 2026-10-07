@@ -1,0 +1,59 @@
+{
+  "_file": "core/Equiniti - Carolina Power & Gas.pdf",
+  "_format": "transfer-agent DSPP statement; pages 1-2 have text, page 3 (privacy notice) is image-only; printed 'Page 1 of 4' but page 4 missing",
+  "doc_type": "custodian_statement",
+  "doc_date": "2025-09-15",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "person",
+      "name": "ROBERT W BRADLEY II",
+      "identifiers": {},
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II 4410 QUAIL HOLLOW RD"
+    },
+    {
+      "ref": "m2",
+      "kind": "account",
+      "name": "Equiniti DSPP ...7220",
+      "identifiers": {
+        "custodian": "Equiniti",
+        "account_last4": "7220"
+      },
+      "page": 1,
+      "quote": "Holder Account Number C0004417220"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II 4410 QUAIL HOLLOW RD"
+    }
+  ],
+  "unreadable_notes": [
+    "Page 4 of 4 is missing."
+  ],
+  "_traps": [
+    "'Carolina Power & Gas Corporation' is the ISSUER of the shares, not a household company. It must not become a company entity in the household.",
+    "Page 3 has no text layer (boilerplate only)."
+  ],
+  "_expected_questions": [
+    {
+      "kind": "unreadable",
+      "about": "Page 4 of 4 missing."
+    }
+  ],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 3,
+    "quotes": 3,
+    "pages": 3,
+    "pages_without_text": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_file": "core/JPM Bradley Capital Stmt.pdf",
+  "_format": "scanned landscape statement, corrupted OCR text layer, 8 pages",
+  "doc_type": "custodian_statement",
+  "doc_date": "2025-10-31",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "company",
+      "name": "BRADLEY CAPITAL PARTNERS, LP",
+      "identifiers": {},
+      "page": 1,
+      "quote": "BRADLEY CAPITAL PARTNERS, LP 200 S TRYON ST STE 1450"
+    },
+    {
+      "ref": "m2",
+      "kind": "account",
+      "name": "J.P. Morgan Partnership Portfolio ...7402",
+      "identifiers": {
+        "custodian": "J.P. Morgan",
+        "account_last4": "7402"
+      },
+      "page": 2,
+      "quote": "PORTFOLIO NUMBER : 448-17740-2"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "BRADLEY CAPITAL PARTNERS, LP"
+    }
+  ],
+  "unreadable_notes": [],
+  "_traps": [
+    "Nothing in this document says who owns or controls the partnership, and its address (200 S Tryon St) is not the family's. From this document alone the company must NOT be attached to any person.",
+    "The same advisor team and template as the trust statement - shared boilerplate is not evidence of common ownership.",
+    "Header title is truncated to 'BRADLEY CAPITAL PARTNERS' (no ', LP')."
+  ],
+  "_expected_questions": [],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 3,
+    "quotes": 3,
+    "pages": 8,
+    "pages_without_text": []
+  }
+}

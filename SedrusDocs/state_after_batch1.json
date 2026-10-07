@@ -1,0 +1,988 @@
+{
+  "schema_version": 1,
+  "documents": {
+    "doc_190a29a763b98e39": {
+      "id": "doc_190a29a763b98e39",
+      "filename": "Smith_Children_Irrevocable_Trust_Agreement.pdf",
+      "sha256": "190a29a763b98e396d7541f7ab6798b95316e4f09adb9edd48000308567f63c4",
+      "doc_type": "trust_agreement",
+      "doc_date": "2019-04-12",
+      "ingested_at": "2026-10-07T03:09:47.915543Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "processed"
+    },
+    "doc_7986075d0b1bc8a2": {
+      "id": "doc_7986075d0b1bc8a2",
+      "filename": "TEST Family 1040.pdf",
+      "sha256": "7986075d0b1bc8a27d5dcac933e8920870715644f03a4ac3875721f758b913fd",
+      "doc_type": "tax_return",
+      "doc_date": null,
+      "ingested_at": "2026-10-07T03:09:47.918197Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "needs_review"
+    }
+  },
+  "entities": {
+    "tru_9dc309caa15d": {
+      "id": "tru_9dc309caa15d",
+      "kind": "trust",
+      "name": "THE SMITH CHILDREN IRREVOCABLE TRUST",
+      "aliases": [],
+      "identifiers": {
+        "trust_date": "2019-04-12",
+        "ein_last4": "2093"
+      },
+      "sources": [
+        "clm_e31fc4a5b661"
+      ]
+    },
+    "per_dac6832e2cab": {
+      "id": "per_dac6832e2cab",
+      "kind": "person",
+      "name": "John D. Smith III",
+      "aliases": [
+        "JOHN D SMITH III"
+      ],
+      "identifiers": {
+        "ssn_last4": "5555"
+      },
+      "sources": [
+        "clm_d110e19b985d",
+        "clm_177e02ee5d91"
+      ]
+    },
+    "per_4ad5b0eee134": {
+      "id": "per_4ad5b0eee134",
+      "kind": "person",
+      "name": "Jane S. Smith",
+      "aliases": [
+        "JANE S SMITH"
+      ],
+      "identifiers": {
+        "ssn_last4": "9999"
+      },
+      "sources": [
+        "clm_607cfffee02c",
+        "clm_9c96083585bd"
+      ]
+    },
+    "per_cfefab557228": {
+      "id": "per_cfefab557228",
+      "kind": "person",
+      "name": "Jordan A. Smith",
+      "aliases": [],
+      "identifiers": {},
+      "sources": [
+        "clm_cde27d78cdd0"
+      ]
+    },
+    "per_596a34c81891": {
+      "id": "per_596a34c81891",
+      "kind": "person",
+      "name": "William D. Smith",
+      "aliases": [
+        "WILLIAM D SMITH"
+      ],
+      "identifiers": {
+        "dob": "2004-06-03",
+        "ssn_last4": "1111"
+      },
+      "sources": [
+        "clm_7fcbec5f781e",
+        "clm_9500bd07ced9"
+      ]
+    },
+    "per_8294214ba636": {
+      "id": "per_8294214ba636",
+      "kind": "person",
+      "name": "Emmett P. Smith",
+      "aliases": [
+        "EMMETT P SMITH"
+      ],
+      "identifiers": {
+        "dob": "2006-11-19",
+        "ssn_last4": "2222"
+      },
+      "sources": [
+        "clm_ba42210d2f10",
+        "clm_b93ad6a9d5bc"
+      ]
+    },
+    "per_35a675647b82": {
+      "id": "per_35a675647b82",
+      "kind": "person",
+      "name": "Elizabeth E. Smith",
+      "aliases": [
+        "ELIZABETH E SMITH"
+      ],
+      "identifiers": {
+        "dob": "2011-02-08"
+      },
+      "sources": [
+        "clm_fa846e425101",
+        "clm_7c8126744849"
+      ]
+    },
+    "per_3941f594c46e": {
+      "id": "per_3941f594c46e",
+      "kind": "person",
+      "name": "MARGARET E. CALDWELL",
+      "aliases": [],
+      "identifiers": {},
+      "sources": [
+        "clm_6ee4cd1b73f0"
+      ]
+    },
+    "co_47f92ac9b10c": {
+      "id": "co_47f92ac9b10c",
+      "kind": "company",
+      "name": "Sage Mountain Holdings, Inc.",
+      "aliases": [],
+      "identifiers": {},
+      "sources": [
+        "clm_8d24f4ecae0b"
+      ]
+    },
+    "acc_a7e3a0cca984": {
+      "id": "acc_a7e3a0cca984",
+      "kind": "account",
+      "name": "Goldman Sachs Custodial Account ...0002",
+      "aliases": [],
+      "identifiers": {
+        "custodian": "Goldman Sachs",
+        "account_last4": "0002"
+      },
+      "sources": [
+        "clm_dd48819db155"
+      ]
+    }
+  },
+  "roles": {
+    "rol_0535e08a889b": {
+      "id": "rol_0535e08a889b",
+      "subject": "per_dac6832e2cab",
+      "role": "grantor",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_047de2113a3c"
+      ]
+    },
+    "rol_b3f5a7277116": {
+      "id": "rol_b3f5a7277116",
+      "subject": "per_4ad5b0eee134",
+      "role": "grantor",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_1bcf56ccfd56"
+      ]
+    },
+    "rol_c570878533f5": {
+      "id": "rol_c570878533f5",
+      "subject": "per_cfefab557228",
+      "role": "trustee",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_1b484704f8ba"
+      ]
+    },
+    "rol_e734d5cc8a39": {
+      "id": "rol_e734d5cc8a39",
+      "subject": "per_3941f594c46e",
+      "role": "successor_trustee",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_6d2705b75611"
+      ]
+    },
+    "rol_956e885afcf1": {
+      "id": "rol_956e885afcf1",
+      "subject": "per_596a34c81891",
+      "role": "beneficiary",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_ebc881ca4186"
+      ]
+    },
+    "rol_dca2c9abec28": {
+      "id": "rol_dca2c9abec28",
+      "subject": "per_8294214ba636",
+      "role": "beneficiary",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_237dd894cf33"
+      ]
+    },
+    "rol_9c82198f9e83": {
+      "id": "rol_9c82198f9e83",
+      "subject": "per_35a675647b82",
+      "role": "beneficiary",
+      "object": "tru_9dc309caa15d",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_6fd476402bbc"
+      ]
+    },
+    "rol_a17ee6f9b4f0": {
+      "id": "rol_a17ee6f9b4f0",
+      "subject": "per_dac6832e2cab",
+      "role": "spouse_of",
+      "object": "per_4ad5b0eee134",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_6771dbed09b6"
+      ]
+    },
+    "rol_86ea1b05b822": {
+      "id": "rol_86ea1b05b822",
+      "subject": "per_4ad5b0eee134",
+      "role": "spouse_of",
+      "object": "per_dac6832e2cab",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_9d69868c975d",
+        "clm_f0268b5395a5"
+      ]
+    },
+    "rol_66d28b6b5ee8": {
+      "id": "rol_66d28b6b5ee8",
+      "subject": "per_596a34c81891",
+      "role": "child_of",
+      "object": "per_dac6832e2cab",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_f7bad3e06eee",
+        "clm_b8114c312ab6"
+      ]
+    },
+    "rol_63c05c89031a": {
+      "id": "rol_63c05c89031a",
+      "subject": "per_596a34c81891",
+      "role": "child_of",
+      "object": "per_4ad5b0eee134",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_dd4b0b579749"
+      ]
+    },
+    "rol_219a63b2f468": {
+      "id": "rol_219a63b2f468",
+      "subject": "per_8294214ba636",
+      "role": "child_of",
+      "object": "per_dac6832e2cab",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_927615531ba2",
+        "clm_fdde4b4ead79"
+      ]
+    },
+    "rol_d926c5178ef3": {
+      "id": "rol_d926c5178ef3",
+      "subject": "per_8294214ba636",
+      "role": "child_of",
+      "object": "per_4ad5b0eee134",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_ee54be3d57fe"
+      ]
+    },
+    "rol_975f3e72fc06": {
+      "id": "rol_975f3e72fc06",
+      "subject": "per_35a675647b82",
+      "role": "child_of",
+      "object": "per_dac6832e2cab",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_06ed4715255b",
+        "clm_e80aa03e868f"
+      ]
+    },
+    "rol_8f2dd89ee251": {
+      "id": "rol_8f2dd89ee251",
+      "subject": "per_35a675647b82",
+      "role": "child_of",
+      "object": "per_4ad5b0eee134",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_4f39b03d71c6"
+      ]
+    },
+    "rol_59bb50e84010": {
+      "id": "rol_59bb50e84010",
+      "subject": "tru_9dc309caa15d",
+      "role": "owner",
+      "object": "co_47f92ac9b10c",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_8e772b42ebd1"
+      ]
+    },
+    "rol_26ca8b5bae8d": {
+      "id": "rol_26ca8b5bae8d",
+      "subject": "tru_9dc309caa15d",
+      "role": "owner",
+      "object": "acc_a7e3a0cca984",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_a8edc5e779e4"
+      ]
+    }
+  },
+  "claims": {
+    "clm_e31fc4a5b661": {
+      "id": "clm_e31fc4a5b661",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "THE SMITH CHILDREN IRREVOCABLE TRUST",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "trust",
+        "name": "THE SMITH CHILDREN IRREVOCABLE TRUST",
+        "identifiers": {
+          "trust_date": "2019-04-12",
+          "ein_last4": "2093"
+        }
+      },
+      "resolved_to": "tru_9dc309caa15d"
+    },
+    "clm_d110e19b985d": {
+      "id": "clm_d110e19b985d",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Grantors: John D. Smith III and Jane S. Smith",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "John D. Smith III",
+        "identifiers": {}
+      },
+      "resolved_to": "per_dac6832e2cab"
+    },
+    "clm_607cfffee02c": {
+      "id": "clm_607cfffee02c",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Grantors: John D. Smith III and Jane S. Smith",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "person",
+        "name": "Jane S. Smith",
+        "identifiers": {}
+      },
+      "resolved_to": "per_4ad5b0eee134"
+    },
+    "clm_cde27d78cdd0": {
+      "id": "clm_cde27d78cdd0",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Trustee: Jordan A. Smith",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "person",
+        "name": "Jordan A. Smith",
+        "identifiers": {}
+      },
+      "resolved_to": "per_cfefab557228"
+    },
+    "clm_7fcbec5f781e": {
+      "id": "clm_7fcbec5f781e",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "WILLIAM D. SMITH, born June 3, 2004",
+      "assertion": {
+        "type": "mention",
+        "ref": "m5",
+        "kind": "person",
+        "name": "William D. Smith",
+        "identifiers": {
+          "dob": "2004-06-03"
+        }
+      },
+      "resolved_to": "per_596a34c81891"
+    },
+    "clm_ba42210d2f10": {
+      "id": "clm_ba42210d2f10",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "EMMETT P. SMITH, born November 19, 2006",
+      "assertion": {
+        "type": "mention",
+        "ref": "m6",
+        "kind": "person",
+        "name": "Emmett P. Smith",
+        "identifiers": {
+          "dob": "2006-11-19"
+        }
+      },
+      "resolved_to": "per_8294214ba636"
+    },
+    "clm_fa846e425101": {
+      "id": "clm_fa846e425101",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "mention",
+        "ref": "m7",
+        "kind": "person",
+        "name": "Elizabeth E. Smith",
+        "identifiers": {
+          "dob": "2011-02-08"
+        }
+      },
+      "resolved_to": "per_35a675647b82"
+    },
+    "clm_6ee4cd1b73f0": {
+      "id": "clm_6ee4cd1b73f0",
+      "document": "doc_190a29a763b98e39",
+      "page": 6,
+      "quote": "MARGARET E. CALDWELL shall serve as successor Trustee.",
+      "assertion": {
+        "type": "mention",
+        "ref": "m8",
+        "kind": "person",
+        "name": "MARGARET E. CALDWELL",
+        "identifiers": {}
+      },
+      "resolved_to": "per_3941f594c46e"
+    },
+    "clm_8d24f4ecae0b": {
+      "id": "clm_8d24f4ecae0b",
+      "document": "doc_190a29a763b98e39",
+      "page": 12,
+      "quote": "1,200 shares of common stock, Sage Mountain Holdings, Inc.",
+      "assertion": {
+        "type": "mention",
+        "ref": "m9",
+        "kind": "company",
+        "name": "Sage Mountain Holdings, Inc.",
+        "identifiers": {}
+      },
+      "resolved_to": "co_47f92ac9b10c"
+    },
+    "clm_dd48819db155": {
+      "id": "clm_dd48819db155",
+      "document": "doc_190a29a763b98e39",
+      "page": 12,
+      "quote": "Custodial account established with Goldman Sachs & Co. LLC, Portfolio No. XXX-XX000-2, in the name of the Smith Children Irrevocable Trust.",
+      "assertion": {
+        "type": "mention",
+        "ref": "m10",
+        "kind": "account",
+        "name": "Goldman Sachs Custodial Account ...0002",
+        "identifiers": {
+          "custodian": "Goldman Sachs",
+          "account_last4": "0002"
+        }
+      },
+      "resolved_to": "acc_a7e3a0cca984"
+    },
+    "clm_047de2113a3c": {
+      "id": "clm_047de2113a3c",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Grantors: John D. Smith III and Jane S. Smith",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "grantor",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_0535e08a889b"
+    },
+    "clm_1bcf56ccfd56": {
+      "id": "clm_1bcf56ccfd56",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Grantors: John D. Smith III and Jane S. Smith",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "grantor",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_b3f5a7277116"
+    },
+    "clm_1b484704f8ba": {
+      "id": "clm_1b484704f8ba",
+      "document": "doc_190a29a763b98e39",
+      "page": 6,
+      "quote": "JORDAN A. SMITH shall serve as the initial Trustee of this Trust and of each separate share created hereunder.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m4",
+        "role": "trustee",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_c570878533f5"
+    },
+    "clm_6d2705b75611": {
+      "id": "clm_6d2705b75611",
+      "document": "doc_190a29a763b98e39",
+      "page": 6,
+      "quote": "If JORDAN A. SMITH is unable or unwilling to serve or to continue to serve as Trustee, then MARGARET E. CALDWELL shall serve as successor Trustee.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m8",
+        "role": "successor_trustee",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_e734d5cc8a39"
+    },
+    "clm_ebc881ca4186": {
+      "id": "clm_ebc881ca4186",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Beneficiaries: William D. Smith, Emmett P. Smith, Elizabeth E. Smith",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "beneficiary",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_956e885afcf1"
+    },
+    "clm_237dd894cf33": {
+      "id": "clm_237dd894cf33",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Beneficiaries: William D. Smith, Emmett P. Smith, Elizabeth E. Smith",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "beneficiary",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_dca2c9abec28"
+    },
+    "clm_6fd476402bbc": {
+      "id": "clm_6fd476402bbc",
+      "document": "doc_190a29a763b98e39",
+      "page": 1,
+      "quote": "Beneficiaries: William D. Smith, Emmett P. Smith, Elizabeth E. Smith",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m7",
+        "role": "beneficiary",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_9c82198f9e83"
+    },
+    "clm_6771dbed09b6": {
+      "id": "clm_6771dbed09b6",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "JOHN D. SMITH III and JANE S. SMITH, husband and wife",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "spouse_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_a17ee6f9b4f0"
+    },
+    "clm_9d69868c975d": {
+      "id": "clm_9d69868c975d",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "JOHN D. SMITH III and JANE S. SMITH, husband and wife",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "spouse_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_86ea1b05b822"
+    },
+    "clm_f7bad3e06eee": {
+      "id": "clm_f7bad3e06eee",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: WILLIAM D. SMITH, born June 3, 2004; EMMETT P. SMITH, born November 19, 2006; and ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "child_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_66d28b6b5ee8"
+    },
+    "clm_dd4b0b579749": {
+      "id": "clm_dd4b0b579749",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: WILLIAM D. SMITH, born June 3, 2004; EMMETT P. SMITH, born November 19, 2006; and ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "child_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_63c05c89031a"
+    },
+    "clm_927615531ba2": {
+      "id": "clm_927615531ba2",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: WILLIAM D. SMITH, born June 3, 2004; EMMETT P. SMITH, born November 19, 2006; and ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "child_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_219a63b2f468"
+    },
+    "clm_ee54be3d57fe": {
+      "id": "clm_ee54be3d57fe",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: WILLIAM D. SMITH, born June 3, 2004; EMMETT P. SMITH, born November 19, 2006; and ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "child_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_d926c5178ef3"
+    },
+    "clm_06ed4715255b": {
+      "id": "clm_06ed4715255b",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: WILLIAM D. SMITH, born June 3, 2004; EMMETT P. SMITH, born November 19, 2006; and ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m7",
+        "role": "child_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_975f3e72fc06"
+    },
+    "clm_4f39b03d71c6": {
+      "id": "clm_4f39b03d71c6",
+      "document": "doc_190a29a763b98e39",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: WILLIAM D. SMITH, born June 3, 2004; EMMETT P. SMITH, born November 19, 2006; and ELIZABETH E. SMITH, born February 8, 2011",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m7",
+        "role": "child_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_8f2dd89ee251"
+    },
+    "clm_8e772b42ebd1": {
+      "id": "clm_8e772b42ebd1",
+      "document": "doc_190a29a763b98e39",
+      "page": 12,
+      "quote": "The Grantors have transferred to the Trustee, and the Trustee acknowledges receipt of, the following property, to be held pursuant to the terms of the Smith Children Irrevocable Trust Agreement dated April 12, 2019: ... 1,200 shares of common stock, Sage Mountain Holdings, Inc.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m9",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_59bb50e84010"
+    },
+    "clm_a8edc5e779e4": {
+      "id": "clm_a8edc5e779e4",
+      "document": "doc_190a29a763b98e39",
+      "page": 12,
+      "quote": "Custodial account established with Goldman Sachs & Co. LLC, Portfolio No. XXX-XX000-2, in the name of the Smith Children Irrevocable Trust.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m10",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_26ca8b5bae8d"
+    },
+    "clm_177e02ee5d91": {
+      "id": "clm_177e02ee5d91",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "JOHN D SMITH III XXX-XX-5555",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "person",
+        "name": "JOHN D SMITH III",
+        "identifiers": {
+          "ssn_last4": "5555"
+        }
+      },
+      "resolved_to": "per_dac6832e2cab"
+    },
+    "clm_9c96083585bd": {
+      "id": "clm_9c96083585bd",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "JANE S SMITH XXX-XX-9999",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "JANE S SMITH",
+        "identifiers": {
+          "ssn_last4": "9999"
+        }
+      },
+      "resolved_to": "per_4ad5b0eee134"
+    },
+    "clm_9500bd07ced9": {
+      "id": "clm_9500bd07ced9",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "WILLIAM D SMITH XXX-XX-1111 SON",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "person",
+        "name": "WILLIAM D SMITH",
+        "identifiers": {
+          "ssn_last4": "1111"
+        }
+      },
+      "resolved_to": "per_596a34c81891"
+    },
+    "clm_b93ad6a9d5bc": {
+      "id": "clm_b93ad6a9d5bc",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "EMMETT P SMITH XXX-XX-2222 SON",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "person",
+        "name": "EMMETT P SMITH",
+        "identifiers": {
+          "ssn_last4": "2222"
+        }
+      },
+      "resolved_to": "per_8294214ba636"
+    },
+    "clm_7c8126744849": {
+      "id": "clm_7c8126744849",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "ELIZABETH E SMITH ... DAUGHTER",
+      "assertion": {
+        "type": "mention",
+        "ref": "m5",
+        "kind": "person",
+        "name": "ELIZABETH E SMITH",
+        "identifiers": {}
+      },
+      "resolved_to": "per_35a675647b82"
+    },
+    "clm_f0268b5395a5": {
+      "id": "clm_f0268b5395a5",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "If joint return, spouse's first name and middle initial JANE S Last name SMITH",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "spouse_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_86ea1b05b822"
+    },
+    "clm_b8114c312ab6": {
+      "id": "clm_b8114c312ab6",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "WILLIAM D SMITH ... SON",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "child_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_66d28b6b5ee8"
+    },
+    "clm_fdde4b4ead79": {
+      "id": "clm_fdde4b4ead79",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "EMMETT P SMITH ... SON",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m4",
+        "role": "child_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_219a63b2f468"
+    },
+    "clm_e80aa03e868f": {
+      "id": "clm_e80aa03e868f",
+      "document": "doc_7986075d0b1bc8a2",
+      "page": 1,
+      "quote": "ELIZABETH E SMITH ... DAUGHTER",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "child_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "resolved_to": "rol_975f3e72fc06"
+    }
+  },
+  "questions": {
+    "q_99b5e4c0923b": {
+      "id": "q_99b5e4c0923b",
+      "kind": "unreadable",
+      "summary": "The Social Security number for Elizabeth E Smith is malformed (printed with 10 digits instead of 9).",
+      "candidates": [],
+      "blocking_claims": [],
+      "raised_by": "doc_7986075d0b1bc8a2",
+      "status": "open",
+      "resolution": null
+    }
+  }
+}

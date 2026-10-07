@@ -1,0 +1,81 @@
+{
+  "_file": "core/Schwab Bradley JTWROS.pdf",
+  "_format": "printed-to-PDF statement (vector text layer), 6 pages",
+  "doc_type": "custodian_statement",
+  "doc_date": "2025-10-31",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "person",
+      "name": "ROBERT W BRADLEY",
+      "identifiers": {},
+      "page": 1,
+      "quote": "ROBERT W BRADLEY & CATHERINE M BRADLEY JT TEN"
+    },
+    {
+      "ref": "m2",
+      "kind": "person",
+      "name": "CATHERINE M BRADLEY",
+      "identifiers": {},
+      "page": 1,
+      "quote": "ROBERT W BRADLEY & CATHERINE M BRADLEY JT TEN"
+    },
+    {
+      "ref": "m3",
+      "kind": "account",
+      "name": "Schwab JTWROS Brokerage ...0094",
+      "identifiers": {
+        "custodian": "Schwab",
+        "account_last4": "0094"
+      },
+      "page": 1,
+      "quote": "BRADLEY II, ROBERT W & BRADLEY, CATHERINE M - JTWROS Account Summary - #6612-0094"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m3",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "ROBERT W BRADLEY & CATHERINE M BRADLEY JT TEN"
+    },
+    {
+      "subject_ref": "m2",
+      "role": "owner",
+      "object_ref": "m3",
+      "qualifiers": {
+        "ownership": "JTWROS"
+      },
+      "page": 1,
+      "quote": "ROBERT W BRADLEY & CATHERINE M BRADLEY JT TEN"
+    }
+  ],
+  "unreadable_notes": [],
+  "_traps": [
+    "Registration drops the 'II' suffix ('ROBERT W BRADLEY') while the summary title keeps it ('BRADLEY II, ROBERT W'). Name-only evidence: same person as Robert W. Bradley II, but no identifier proves it - expect a possible_duplicate question (or a justified link), never a silent new person.",
+    "Last-name-first title 'BRADLEY II, ROBERT W': if an extractor uses that as the name, a surname/first-initial similarity check compares 'w' to 'ii' and finds no resemblance - the person gets silently duplicated. Normalize 'LAST, FIRST' before comparing.",
+    "Address is wrapped mid-street across lines ('JT TEN 4410 QUAIL HOLLOW' / 'RD CHARLOTTE 28210').",
+    "'JT TEN' = joint tenants (JTWROS) - both people are holders."
+  ],
+  "_expected_questions": [
+    {
+      "kind": "possible_duplicate",
+      "about": "'ROBERT W BRADLEY' vs Robert W. Bradley II (no identifiers)."
+    },
+    {
+      "kind": "possible_duplicate",
+      "about": "'CATHERINE M BRADLEY' vs Catherine M. Bradley (no identifiers)."
+    }
+  ],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 5,
+    "quotes": 5,
+    "pages": 6,
+    "pages_without_text": []
+  }
+}

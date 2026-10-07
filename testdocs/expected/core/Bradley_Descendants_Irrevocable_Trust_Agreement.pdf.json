@@ -1,0 +1,248 @@
+{
+  "_file": "core/Bradley_Descendants_Irrevocable_Trust_Agreement.pdf",
+  "_format": "born-digital (text layer, 10 pages, law-firm style)",
+  "doc_type": "trust_agreement",
+  "doc_date": "2020-06-03",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "person",
+      "name": "ROBERT W. BRADLEY II",
+      "identifiers": {},
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife"
+    },
+    {
+      "ref": "m2",
+      "kind": "person",
+      "name": "CATHERINE M. BRADLEY",
+      "identifiers": {},
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife"
+    },
+    {
+      "ref": "m3",
+      "kind": "trust",
+      "name": "THE BRADLEY DESCENDANTS IRREVOCABLE TRUST",
+      "identifiers": {
+        "trust_date": "2020-06-03",
+        "ein_last4": "9042"
+      },
+      "page": 2,
+      "quote": "to be known as THE BRADLEY DESCENDANTS IRREVOCABLE TRUST (the \"Trust\")"
+    },
+    {
+      "ref": "m4",
+      "kind": "person",
+      "name": "REBECCA L. BRADLEY",
+      "identifiers": {},
+      "page": 2,
+      "quote": "and REBECCA L. BRADLEY, of Mecklenburg County, North Carolina (the \"Trustee\")"
+    },
+    {
+      "ref": "m5",
+      "kind": "person",
+      "name": "HENRY R. BRADLEY",
+      "identifiers": {
+        "dob": "2003-05-09"
+      },
+      "page": 2,
+      "quote": "HENRY R. BRADLEY, born May 9, 2003"
+    },
+    {
+      "ref": "m6",
+      "kind": "person",
+      "name": "OLIVIA C. BRADLEY",
+      "identifiers": {
+        "dob": "2006-10-30"
+      },
+      "page": 2,
+      "quote": "OLIVIA C. BRADLEY, born October 30, 2006"
+    },
+    {
+      "ref": "m7",
+      "kind": "person",
+      "name": "SAMUEL T. BRADLEY",
+      "identifiers": {
+        "dob": "2010-01-17"
+      },
+      "page": 2,
+      "quote": "SAMUEL T. BRADLEY, born January 17, 2010"
+    },
+    {
+      "ref": "m8",
+      "kind": "person",
+      "name": "DANIEL P. WHITAKER",
+      "identifiers": {},
+      "page": 5,
+      "quote": "DANIEL P. WHITAKER shall serve as successor Trustee"
+    },
+    {
+      "ref": "m9",
+      "kind": "account",
+      "name": "J.P. Morgan Trust Portfolio ...7310",
+      "identifiers": {
+        "custodian": "J.P. Morgan",
+        "account_last4": "7310"
+      },
+      "page": 10,
+      "quote": "Custodial account established with J.P. Morgan Securities LLC, Account No. XXX-X7731-0, in the name of the Bradley Descendants Irrevocable Trust"
+    },
+    {
+      "ref": "m10",
+      "kind": "company",
+      "name": "Quail Hollow Holdings, Inc.",
+      "identifiers": {},
+      "page": 10,
+      "quote": "1,500 shares of common stock, Quail Hollow Holdings, Inc."
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "grantor",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife, each residing in Mecklenburg County, North Carolina (each a \"Grantor\""
+    },
+    {
+      "subject_ref": "m2",
+      "role": "grantor",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife, each residing in Mecklenburg County, North Carolina (each a \"Grantor\""
+    },
+    {
+      "subject_ref": "m1",
+      "role": "spouse_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife"
+    },
+    {
+      "subject_ref": "m4",
+      "role": "trustee",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 5,
+      "quote": "REBECCA L. BRADLEY shall serve as the initial Trustee of the Trust"
+    },
+    {
+      "subject_ref": "m8",
+      "role": "successor_trustee",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 5,
+      "quote": "If REBECCA L. BRADLEY dies, resigns, becomes incapacitated or otherwise ceases to serve, DANIEL P. WHITAKER shall serve as successor Trustee"
+    },
+    {
+      "subject_ref": "m5",
+      "role": "beneficiary",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 3,
+      "quote": "the Children are HENRY R. BRADLEY, OLIVIA C. BRADLEY and SAMUEL T. BRADLEY"
+    },
+    {
+      "subject_ref": "m6",
+      "role": "beneficiary",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 3,
+      "quote": "the Children are HENRY R. BRADLEY, OLIVIA C. BRADLEY and SAMUEL T. BRADLEY"
+    },
+    {
+      "subject_ref": "m7",
+      "role": "beneficiary",
+      "object_ref": "m3",
+      "qualifiers": {},
+      "page": 3,
+      "quote": "the Children are HENRY R. BRADLEY, OLIVIA C. BRADLEY and SAMUEL T. BRADLEY"
+    },
+    {
+      "subject_ref": "m5",
+      "role": "child_of",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children"
+    },
+    {
+      "subject_ref": "m5",
+      "role": "child_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children"
+    },
+    {
+      "subject_ref": "m6",
+      "role": "child_of",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children"
+    },
+    {
+      "subject_ref": "m6",
+      "role": "child_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children"
+    },
+    {
+      "subject_ref": "m7",
+      "role": "child_of",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children"
+    },
+    {
+      "subject_ref": "m7",
+      "role": "child_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children"
+    },
+    {
+      "subject_ref": "m3",
+      "role": "owner",
+      "object_ref": "m9",
+      "qualifiers": {},
+      "page": 10,
+      "quote": "Account No. XXX-X7731-0, in the name of the Bradley Descendants Irrevocable Trust"
+    },
+    {
+      "subject_ref": "m3",
+      "role": "owner",
+      "object_ref": "m10",
+      "qualifiers": {
+        "shares": "1,500"
+      },
+      "page": 10,
+      "quote": "1,500 shares of common stock, Quail Hollow Holdings, Inc."
+    }
+  ],
+  "unreadable_notes": [],
+  "_traps": [
+    "Section 2.2 says 'Neither Grantor shall serve as Trustee' - a negative statement; the grantors must NOT get trustee roles.",
+    "Trustee Rebecca L. Bradley and grantor Robert W. Bradley II are both 'R. Bradley' and live at 410 vs 4410 Quail Hollow Rd (different ZIPs). Never merge them.",
+    "Only one successor is named (Daniel P. Whitaker); after him, a bank or trust company 'may' be appointed. That generic fallback names no entity and must not become one.",
+    "Schedule A links the trust to a company (1,500 shares of Quail Hollow Holdings, Inc.) and to the J.P. Morgan account; the account number is masked (XXX-X7731-0).",
+    "Cover page and body both list parties; extract each role once (cover is a summary, body is authoritative)."
+  ],
+  "_expected_questions": [],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 26,
+    "quotes": 26,
+    "pages": 10,
+    "pages_without_text": []
+  }
+}

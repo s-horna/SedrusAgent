@@ -1,0 +1,2046 @@
+{
+  "schema_version": 1,
+  "documents": {
+    "doc_76c4bf775b34f56a": {
+      "id": "doc_76c4bf775b34f56a",
+      "filename": "Bradley Morgan Stanley JTWROS.pdf",
+      "sha256": "76c4bf775b34f56a00c887de55f1531940200834131a0f636e5c8c0c67e26e03",
+      "doc_type": "custodian_statement",
+      "doc_date": "2025-10-31",
+      "ingested_at": "2026-10-06T22:19:07.441587Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "needs_review"
+    },
+    "doc_74372224ab1a59f8": {
+      "id": "doc_74372224ab1a59f8",
+      "filename": "Bradley_Descendants_Irrevocable_Trust_Agreement.pdf",
+      "sha256": "74372224ab1a59f838ad1ca349512bbcc56a9b85b18deb21a9906f4babc82b1a",
+      "doc_type": "trust_agreement",
+      "doc_date": "2020-06-03",
+      "ingested_at": "2026-10-06T22:19:35.783832Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "processed"
+    },
+    "doc_50ec991c74825441": {
+      "id": "doc_50ec991c74825441",
+      "filename": "Equiniti - Carolina Power & Gas.pdf",
+      "sha256": "50ec991c74825441e8efae6e7057dc0a66427e86a4f1ee7d398a48bcdfcc3fd7",
+      "doc_type": "custodian_statement",
+      "doc_date": "2025-09-15",
+      "ingested_at": "2026-10-06T22:19:59.501753Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "processed"
+    },
+    "doc_75280e3a42068f7e": {
+      "id": "doc_75280e3a42068f7e",
+      "filename": "JPM Bradley Capital Stmt.pdf",
+      "sha256": "75280e3a42068f7e25b144ee7db6c80e70317389508152d067eefd8cb84a184a",
+      "doc_type": "custodian_statement",
+      "doc_date": "2025-10-31",
+      "ingested_at": "2026-10-06T22:20:25.541464Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "processed"
+    },
+    "doc_d539adf15d2d871a": {
+      "id": "doc_d539adf15d2d871a",
+      "filename": "JPM Bradley Descendants Irrev Trust.pdf",
+      "sha256": "d539adf15d2d871a6f454799c3f27245631b784019bdbb43f9b3b43ee961c405",
+      "doc_type": "custodian_statement",
+      "doc_date": "2025-10-31",
+      "ingested_at": "2026-10-06T22:23:05.707520Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "needs_review"
+    },
+    "doc_9fa2a03d74d7019b": {
+      "id": "doc_9fa2a03d74d7019b",
+      "filename": "Schwab Bradley JTWROS.pdf",
+      "sha256": "9fa2a03d74d7019b514ac155083720ee8db09bb2edb8cbcf29e5cbddf86b0a13",
+      "doc_type": "custodian_statement",
+      "doc_date": "2025-10-31",
+      "ingested_at": "2026-10-06T22:23:25.761127Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "processed"
+    },
+    "doc_8df98dc7d088b945": {
+      "id": "doc_8df98dc7d088b945",
+      "filename": "Schwab Robert Bradley Roth x2290.pdf",
+      "sha256": "8df98dc7d088b94558004cad82b10d1a907922904eb677d90ebf0380ebfeb989",
+      "doc_type": "custodian_statement",
+      "doc_date": "2025-09-30",
+      "ingested_at": "2026-10-06T22:23:42.480787Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "needs_review"
+    },
+    "doc_59a3fcbcefb40fa4": {
+      "id": "doc_59a3fcbcefb40fa4",
+      "filename": "TEST Bradley Family 1040.pdf",
+      "sha256": "59a3fcbcefb40fa4e69092d300ef3755a8e25b173c89a5fb85ef10edebc9f9e9",
+      "doc_type": "tax_return",
+      "doc_date": null,
+      "ingested_at": "2026-10-06T22:24:01.691647Z",
+      "extraction_model": "google/gemini-3.8-flash",
+      "status": "needs_review"
+    }
+  },
+  "entities": {
+    "per_315721e1041b": {
+      "id": "per_315721e1041b",
+      "kind": "person",
+      "name": "Catherine M Bradley",
+      "aliases": [
+        "Catherine M. Bradley",
+        "CATHERINE M BRADLEY"
+      ],
+      "identifiers": {
+        "ssn_last4": "3312"
+      },
+      "sources": [
+        "clm_7fefded1c808",
+        "clm_65dca069ed9e",
+        "clm_7e250b185d9c",
+        "clm_19ffa321889c"
+      ]
+    },
+    "acc_76ba2697c5e9": {
+      "id": "acc_76ba2697c5e9",
+      "kind": "account",
+      "name": "Morgan Stanley Active Assets Account - Brokerage ...7118",
+      "aliases": [],
+      "identifiers": {
+        "custodian": "Morgan Stanley",
+        "account_last4": "7118"
+      },
+      "sources": [
+        "clm_7383e4c52d40"
+      ]
+    },
+    "acc_398863febdc9": {
+      "id": "acc_398863febdc9",
+      "kind": "account",
+      "name": "Morgan Stanley Portfolio Management - Select UMA - Advisory ...1118",
+      "aliases": [],
+      "identifiers": {
+        "custodian": "Morgan Stanley",
+        "account_last4": "1118"
+      },
+      "sources": [
+        "clm_435758e73262"
+      ]
+    },
+    "acc_298eb925c61a": {
+      "id": "acc_298eb925c61a",
+      "kind": "account",
+      "name": "Morgan Stanley Alternative Investments - Brokerage ...3118",
+      "aliases": [],
+      "identifiers": {
+        "custodian": "Morgan Stanley",
+        "account_last4": "3118"
+      },
+      "sources": [
+        "clm_c796e3c059ff"
+      ]
+    },
+    "tru_5e955ee27f42": {
+      "id": "tru_5e955ee27f42",
+      "kind": "trust",
+      "name": "THE BRADLEY DESCENDANTS IRREVOCABLE TRUST",
+      "aliases": [],
+      "identifiers": {
+        "ein_last4": "9042",
+        "trust_date": "2020-06-03"
+      },
+      "sources": [
+        "clm_2665c03c5ea0"
+      ]
+    },
+    "per_a58dbba24139": {
+      "id": "per_a58dbba24139",
+      "kind": "person",
+      "name": "Robert W. Bradley II",
+      "aliases": [
+        "ROBERT W BRADLEY II",
+        "Robert W Bradley II"
+      ],
+      "identifiers": {
+        "ssn_last4": "2087"
+      },
+      "sources": [
+        "clm_bdaba579a4a5",
+        "clm_7db349f669bc",
+        "clm_afc3f9dc02f4",
+        "clm_58bbcfbb1a2a"
+      ]
+    },
+    "per_1afe5f8120d9": {
+      "id": "per_1afe5f8120d9",
+      "kind": "person",
+      "name": "Rebecca L. Bradley",
+      "aliases": [
+        "REBECCA L. BRADLEY"
+      ],
+      "identifiers": {},
+      "sources": [
+        "clm_67d5990304a3",
+        "clm_dcb1a37726b8"
+      ]
+    },
+    "per_dcc17503f359": {
+      "id": "per_dcc17503f359",
+      "kind": "person",
+      "name": "Henry R. Bradley",
+      "aliases": [
+        "Henry R Bradley",
+        "HENRY R BRADLEY"
+      ],
+      "identifiers": {
+        "dob": "2003-05-09",
+        "ssn_last4": "5521"
+      },
+      "sources": [
+        "clm_465413a386a1",
+        "clm_9e2d047bbbd5",
+        "clm_71772354df60"
+      ]
+    },
+    "per_b42d4f2f6850": {
+      "id": "per_b42d4f2f6850",
+      "kind": "person",
+      "name": "Olivia C. Bradley",
+      "aliases": [
+        "Olivia C Bradley",
+        "OLIVIA C BRADLEY"
+      ],
+      "identifiers": {
+        "dob": "2006-10-30",
+        "ssn_last4": "0145"
+      },
+      "sources": [
+        "clm_20b4929ba101",
+        "clm_2e57c163d9a9",
+        "clm_bdbe28909746"
+      ]
+    },
+    "per_36cf94a53450": {
+      "id": "per_36cf94a53450",
+      "kind": "person",
+      "name": "Samuel T. Bradley",
+      "aliases": [
+        "Samuel T Bradley",
+        "SAMUEL T BRADLEY"
+      ],
+      "identifiers": {
+        "dob": "2010-01-17",
+        "ssn_last4": "4028"
+      },
+      "sources": [
+        "clm_ae2498339036",
+        "clm_290da3d0bd92",
+        "clm_d2fe7ece6e86"
+      ]
+    },
+    "per_99bdbb9a5b57": {
+      "id": "per_99bdbb9a5b57",
+      "kind": "person",
+      "name": "Daniel P. Whitaker",
+      "aliases": [],
+      "identifiers": {},
+      "sources": [
+        "clm_8324fda43b85"
+      ]
+    },
+    "co_e58c264d6461": {
+      "id": "co_e58c264d6461",
+      "kind": "company",
+      "name": "Quail Hollow Holdings, Inc.",
+      "aliases": [],
+      "identifiers": {},
+      "sources": [
+        "clm_1300c06ec9b2"
+      ]
+    },
+    "acc_82de1b6da269": {
+      "id": "acc_82de1b6da269",
+      "kind": "account",
+      "name": "J.P. Morgan Securities LLC Custodial account ...7310",
+      "aliases": [],
+      "identifiers": {
+        "account_last4": "7310",
+        "custodian": "J.P. Morgan Securities LLC"
+      },
+      "sources": [
+        "clm_5cdd749a520e"
+      ]
+    },
+    "acc_72dd8811a26f": {
+      "id": "acc_72dd8811a26f",
+      "kind": "account",
+      "name": "Equiniti Investor Direct Choice Plan ...7220",
+      "aliases": [],
+      "identifiers": {
+        "account_last4": "7220",
+        "custodian": "Equiniti Trust Company, LLC"
+      },
+      "sources": [
+        "clm_f94417b03b38"
+      ]
+    },
+    "co_fd78e7b00cb1": {
+      "id": "co_fd78e7b00cb1",
+      "kind": "company",
+      "name": "BRADLEY CAPITAL PARTNERS, LP",
+      "aliases": [],
+      "identifiers": {},
+      "sources": [
+        "clm_9927b3247c02"
+      ]
+    },
+    "acc_71a8f2b25cfe": {
+      "id": "acc_71a8f2b25cfe",
+      "kind": "account",
+      "name": "J.P. Morgan Brokerage ...7402",
+      "aliases": [],
+      "identifiers": {
+        "custodian": "J.P. Morgan Securities LLC",
+        "account_last4": "7402"
+      },
+      "sources": [
+        "clm_d82cbb2dda19"
+      ]
+    },
+    "tru_24f4ada442b9": {
+      "id": "tru_24f4ada442b9",
+      "kind": "trust",
+      "name": "BRADLEY DESCENDANTS IRREVOCABLE TRUST",
+      "aliases": [],
+      "identifiers": {
+        "trust_date": "2016-09-14"
+      },
+      "sources": [
+        "clm_f58f8957c57a"
+      ]
+    },
+    "acc_9ea23822e060": {
+      "id": "acc_9ea23822e060",
+      "kind": "account",
+      "name": "J.P. Morgan Trust ...7336",
+      "aliases": [],
+      "identifiers": {
+        "account_last4": "7336",
+        "custodian": "J.P. Morgan"
+      },
+      "sources": [
+        "clm_44e5c2ddd961"
+      ]
+    },
+    "acc_70c6283df5db": {
+      "id": "acc_70c6283df5db",
+      "kind": "account",
+      "name": "Schwab JTWROS Brokerage ...0094",
+      "aliases": [],
+      "identifiers": {
+        "account_last4": "0094",
+        "custodian": "Charles Schwab"
+      },
+      "sources": [
+        "clm_06464b9a7e7c"
+      ]
+    }
+  },
+  "roles": {
+    "rol_108a82b3cc6f": {
+      "id": "rol_108a82b3cc6f",
+      "subject": "per_a58dbba24139",
+      "role": "grantor",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_da1be993d611"
+      ]
+    },
+    "rol_299f5109f2d6": {
+      "id": "rol_299f5109f2d6",
+      "subject": "per_315721e1041b",
+      "role": "grantor",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_e08da5417187"
+      ]
+    },
+    "rol_3d064f48b1af": {
+      "id": "rol_3d064f48b1af",
+      "subject": "per_a58dbba24139",
+      "role": "spouse_of",
+      "object": "per_315721e1041b",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_269068cfb315",
+        "clm_940383083de5"
+      ]
+    },
+    "rol_adfb5e9479fa": {
+      "id": "rol_adfb5e9479fa",
+      "subject": "per_315721e1041b",
+      "role": "spouse_of",
+      "object": "per_a58dbba24139",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_7db289d38e57",
+        "clm_d4f4283202e7"
+      ]
+    },
+    "rol_f638f67d9de1": {
+      "id": "rol_f638f67d9de1",
+      "subject": "per_1afe5f8120d9",
+      "role": "trustee",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_7e1ae3a5537e"
+      ]
+    },
+    "rol_e1d3c911bb3d": {
+      "id": "rol_e1d3c911bb3d",
+      "subject": "per_99bdbb9a5b57",
+      "role": "successor_trustee",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_ee6ed223b1ec"
+      ]
+    },
+    "rol_24d350a1dbcc": {
+      "id": "rol_24d350a1dbcc",
+      "subject": "per_dcc17503f359",
+      "role": "child_of",
+      "object": "per_a58dbba24139",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_c22ccf2d69e5",
+        "clm_4cce927b4627"
+      ]
+    },
+    "rol_7b6214c9f6a9": {
+      "id": "rol_7b6214c9f6a9",
+      "subject": "per_dcc17503f359",
+      "role": "child_of",
+      "object": "per_315721e1041b",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_f27fb427a116"
+      ]
+    },
+    "rol_4fa744a1c157": {
+      "id": "rol_4fa744a1c157",
+      "subject": "per_b42d4f2f6850",
+      "role": "child_of",
+      "object": "per_a58dbba24139",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_9898ec128866",
+        "clm_c3492cdaa526"
+      ]
+    },
+    "rol_fe99b191ddea": {
+      "id": "rol_fe99b191ddea",
+      "subject": "per_b42d4f2f6850",
+      "role": "child_of",
+      "object": "per_315721e1041b",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_d19cfc60eaaf"
+      ]
+    },
+    "rol_79a31fb168da": {
+      "id": "rol_79a31fb168da",
+      "subject": "per_36cf94a53450",
+      "role": "child_of",
+      "object": "per_a58dbba24139",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_75cb8d557cdc",
+        "clm_6d078470e2b5"
+      ]
+    },
+    "rol_b2b89d0972c4": {
+      "id": "rol_b2b89d0972c4",
+      "subject": "per_36cf94a53450",
+      "role": "child_of",
+      "object": "per_315721e1041b",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_9a4aee732e50"
+      ]
+    },
+    "rol_7b41c891ccfa": {
+      "id": "rol_7b41c891ccfa",
+      "subject": "per_dcc17503f359",
+      "role": "beneficiary",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_376f27a75072"
+      ]
+    },
+    "rol_066d1496eb67": {
+      "id": "rol_066d1496eb67",
+      "subject": "per_b42d4f2f6850",
+      "role": "beneficiary",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_1b87ba02e996"
+      ]
+    },
+    "rol_acab4e3709ea": {
+      "id": "rol_acab4e3709ea",
+      "subject": "per_36cf94a53450",
+      "role": "beneficiary",
+      "object": "tru_5e955ee27f42",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_db778cbc8b22"
+      ]
+    },
+    "rol_dc83241a5e81": {
+      "id": "rol_dc83241a5e81",
+      "subject": "tru_5e955ee27f42",
+      "role": "owner",
+      "object": "acc_82de1b6da269",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_bb2d449862cd"
+      ]
+    },
+    "rol_fef185957808": {
+      "id": "rol_fef185957808",
+      "subject": "per_a58dbba24139",
+      "role": "owner",
+      "object": "acc_72dd8811a26f",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_ffedf71f873c"
+      ]
+    },
+    "rol_cc1e16291ad4": {
+      "id": "rol_cc1e16291ad4",
+      "subject": "co_fd78e7b00cb1",
+      "role": "owner",
+      "object": "acc_71a8f2b25cfe",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_3b40446e3c3f"
+      ]
+    },
+    "rol_e69479d6cdbc": {
+      "id": "rol_e69479d6cdbc",
+      "subject": "per_1afe5f8120d9",
+      "role": "trustee",
+      "object": "tru_24f4ada442b9",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_ba1c88a7b045"
+      ]
+    },
+    "rol_c336d52297c7": {
+      "id": "rol_c336d52297c7",
+      "subject": "tru_24f4ada442b9",
+      "role": "owner",
+      "object": "acc_9ea23822e060",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_45def56de2a3"
+      ]
+    },
+    "rol_c605e8a35304": {
+      "id": "rol_c605e8a35304",
+      "subject": "per_a58dbba24139",
+      "role": "owner",
+      "object": "acc_70c6283df5db",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_0ce8fae7968c"
+      ]
+    },
+    "rol_40218d341721": {
+      "id": "rol_40218d341721",
+      "subject": "per_315721e1041b",
+      "role": "owner",
+      "object": "acc_70c6283df5db",
+      "qualifiers": {},
+      "effective_from": null,
+      "effective_to": null,
+      "status": "active",
+      "sources": [
+        "clm_8bec589ce3dc"
+      ]
+    }
+  },
+  "claims": {
+    "clm_3b2b12864c8f": {
+      "id": "clm_3b2b12864c8f",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 1,
+      "quote": "Robert W Bradley II",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "person",
+        "name": "Robert W Bradley II",
+        "identifiers": {}
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_7fefded1c808": {
+      "id": "clm_7fefded1c808",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 1,
+      "quote": "Catherine M Bradley",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "Catherine M Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_315721e1041b"
+    },
+    "clm_7383e4c52d40": {
+      "id": "clm_7383e4c52d40",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 5,
+      "quote": "228-104477-118 Active Assets Account - Brokerage",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "account",
+        "name": "Morgan Stanley Active Assets Account - Brokerage ...7118",
+        "identifiers": {
+          "custodian": "Morgan Stanley",
+          "account_last4": "7118"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_76ba2697c5e9"
+    },
+    "clm_435758e73262": {
+      "id": "clm_435758e73262",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 5,
+      "quote": "228-104491-118 Portfolio Management - Select UMA - Advisory",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "account",
+        "name": "Morgan Stanley Portfolio Management - Select UMA - Advisory ...1118",
+        "identifiers": {
+          "custodian": "Morgan Stanley",
+          "account_last4": "1118"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_398863febdc9"
+    },
+    "clm_c796e3c059ff": {
+      "id": "clm_c796e3c059ff",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 5,
+      "quote": "228-104503-118 Alternative Investments - Brokerage",
+      "assertion": {
+        "type": "mention",
+        "ref": "m5",
+        "kind": "account",
+        "name": "Morgan Stanley Alternative Investments - Brokerage ...3118",
+        "identifiers": {
+          "custodian": "Morgan Stanley",
+          "account_last4": "3118"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_298eb925c61a"
+    },
+    "clm_c1f98b2c59dd": {
+      "id": "clm_c1f98b2c59dd",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 7,
+      "quote": "Account name: Robert W Bradley II\n Catherine M Bradley\n JTWROS\nAccount number: 228-104477-118",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_704c72c0b2b5": {
+      "id": "clm_704c72c0b2b5",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 7,
+      "quote": "Account name: Robert W Bradley II\n Catherine M Bradley\n JTWROS\nAccount number: 228-104477-118",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "owner",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_a8a1404dcde6": {
+      "id": "clm_a8a1404dcde6",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 13,
+      "quote": "Account name: Robert W Bradley II\n Catherine M Bradley JTWROS\nFriendly account name: Family Core UMA\nAccount number: 228-104491-118",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m4",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_d6bdf69b0283": {
+      "id": "clm_d6bdf69b0283",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 13,
+      "quote": "Account name: Robert W Bradley II\n Catherine M Bradley JTWROS\nFriendly account name: Family Core UMA\nAccount number: 228-104491-118",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "owner",
+        "object_ref": "m4",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_0d79d2e04a60": {
+      "id": "clm_0d79d2e04a60",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 1,
+      "quote": "Robert W Bradley II\nCatherine M Bradley\nJTWROS",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m5",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_9191be10fbee": {
+      "id": "clm_9191be10fbee",
+      "document": "doc_76c4bf775b34f56a",
+      "page": 1,
+      "quote": "Robert W Bradley II\nCatherine M Bradley\nJTWROS",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "owner",
+        "object_ref": "m5",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_2665c03c5ea0": {
+      "id": "clm_2665c03c5ea0",
+      "document": "doc_74372224ab1a59f8",
+      "page": 1,
+      "quote": "THE BRADLEY DESCENDANTS IRREVOCABLE TRUST\n\nDated June 3, 2020",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "trust",
+        "name": "THE BRADLEY DESCENDANTS IRREVOCABLE TRUST",
+        "identifiers": {
+          "ein_last4": "9042",
+          "trust_date": "2020-06-03"
+        }
+      },
+      "verified": true,
+      "resolved_to": "tru_5e955ee27f42"
+    },
+    "clm_bdaba579a4a5": {
+      "id": "clm_bdaba579a4a5",
+      "document": "doc_74372224ab1a59f8",
+      "page": 1,
+      "quote": "Grantors: Robert W. Bradley II and Catherine M. Bradley",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "Robert W. Bradley II",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_a58dbba24139"
+    },
+    "clm_65dca069ed9e": {
+      "id": "clm_65dca069ed9e",
+      "document": "doc_74372224ab1a59f8",
+      "page": 1,
+      "quote": "Grantors: Robert W. Bradley II and Catherine M. Bradley",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "person",
+        "name": "Catherine M. Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_315721e1041b"
+    },
+    "clm_67d5990304a3": {
+      "id": "clm_67d5990304a3",
+      "document": "doc_74372224ab1a59f8",
+      "page": 1,
+      "quote": "Trustee: Rebecca L. Bradley",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "person",
+        "name": "Rebecca L. Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_1afe5f8120d9"
+    },
+    "clm_465413a386a1": {
+      "id": "clm_465413a386a1",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "HENRY R. BRADLEY, born May 9, 2003",
+      "assertion": {
+        "type": "mention",
+        "ref": "m5",
+        "kind": "person",
+        "name": "Henry R. Bradley",
+        "identifiers": {
+          "dob": "2003-05-09"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_dcc17503f359"
+    },
+    "clm_20b4929ba101": {
+      "id": "clm_20b4929ba101",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "OLIVIA C. BRADLEY, born October 30, 2006",
+      "assertion": {
+        "type": "mention",
+        "ref": "m6",
+        "kind": "person",
+        "name": "Olivia C. Bradley",
+        "identifiers": {
+          "dob": "2006-10-30"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_b42d4f2f6850"
+    },
+    "clm_ae2498339036": {
+      "id": "clm_ae2498339036",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "SAMUEL T. BRADLEY, born January 17, 2010",
+      "assertion": {
+        "type": "mention",
+        "ref": "m7",
+        "kind": "person",
+        "name": "Samuel T. Bradley",
+        "identifiers": {
+          "dob": "2010-01-17"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_36cf94a53450"
+    },
+    "clm_8324fda43b85": {
+      "id": "clm_8324fda43b85",
+      "document": "doc_74372224ab1a59f8",
+      "page": 5,
+      "quote": "DANIEL P. WHITAKER shall serve as successor Trustee.",
+      "assertion": {
+        "type": "mention",
+        "ref": "m8",
+        "kind": "person",
+        "name": "Daniel P. Whitaker",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_99bdbb9a5b57"
+    },
+    "clm_1300c06ec9b2": {
+      "id": "clm_1300c06ec9b2",
+      "document": "doc_74372224ab1a59f8",
+      "page": 10,
+      "quote": "1,500 shares of common stock, Quail Hollow Holdings, Inc.",
+      "assertion": {
+        "type": "mention",
+        "ref": "m9",
+        "kind": "company",
+        "name": "Quail Hollow Holdings, Inc.",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "co_e58c264d6461"
+    },
+    "clm_5cdd749a520e": {
+      "id": "clm_5cdd749a520e",
+      "document": "doc_74372224ab1a59f8",
+      "page": 10,
+      "quote": "Custodial account established with J.P. Morgan Securities LLC, Account No. XXX-X7731-0, in the name of the Bradley Descendants Irrevocable Trust.",
+      "assertion": {
+        "type": "mention",
+        "ref": "m10",
+        "kind": "account",
+        "name": "J.P. Morgan Securities LLC Custodial account ...7310",
+        "identifiers": {
+          "account_last4": "7310",
+          "custodian": "J.P. Morgan Securities LLC"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_82de1b6da269"
+    },
+    "clm_da1be993d611": {
+      "id": "clm_da1be993d611",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife, each residing in Mecklenburg County, North Carolina (each a \"Grantor\" and together the \"Grantors\")",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "grantor",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_108a82b3cc6f"
+    },
+    "clm_e08da5417187": {
+      "id": "clm_e08da5417187",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "by and between ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife, each residing in Mecklenburg County, North Carolina (each a \"Grantor\" and together the \"Grantors\")",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "grantor",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_299f5109f2d6"
+    },
+    "clm_269068cfb315": {
+      "id": "clm_269068cfb315",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "spouse_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_3d064f48b1af"
+    },
+    "clm_7db289d38e57": {
+      "id": "clm_7db289d38e57",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "ROBERT W. BRADLEY II and CATHERINE M. BRADLEY, husband and wife",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "spouse_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_adfb5e9479fa"
+    },
+    "clm_7e1ae3a5537e": {
+      "id": "clm_7e1ae3a5537e",
+      "document": "doc_74372224ab1a59f8",
+      "page": 5,
+      "quote": "REBECCA L. BRADLEY shall serve as the initial Trustee of the Trust and of each separate share.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m4",
+        "role": "trustee",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_f638f67d9de1"
+    },
+    "clm_ee6ed223b1ec": {
+      "id": "clm_ee6ed223b1ec",
+      "document": "doc_74372224ab1a59f8",
+      "page": 5,
+      "quote": "If REBECCA L. BRADLEY dies, resigns, becomes incapacitated or otherwise ceases to serve, DANIEL P. WHITAKER shall serve as successor Trustee.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m8",
+        "role": "successor_trustee",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_e1d3c911bb3d"
+    },
+    "clm_c22ccf2d69e5": {
+      "id": "clm_c22ccf2d69e5",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: HENRY R. BRADLEY, born May 9, 2003",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "child_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_24d350a1dbcc"
+    },
+    "clm_f27fb427a116": {
+      "id": "clm_f27fb427a116",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: HENRY R. BRADLEY, born May 9, 2003",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "child_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_7b6214c9f6a9"
+    },
+    "clm_9898ec128866": {
+      "id": "clm_9898ec128866",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: HENRY R. BRADLEY, born May 9, 2003; OLIVIA C. BRADLEY, born October 30, 2006",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "child_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_4fa744a1c157"
+    },
+    "clm_d19cfc60eaaf": {
+      "id": "clm_d19cfc60eaaf",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: HENRY R. BRADLEY, born May 9, 2003; OLIVIA C. BRADLEY, born October 30, 2006",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "child_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_fe99b191ddea"
+    },
+    "clm_75cb8d557cdc": {
+      "id": "clm_75cb8d557cdc",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: HENRY R. BRADLEY, born May 9, 2003; OLIVIA C. BRADLEY, born October 30, 2006; and SAMUEL T. BRADLEY, born January 17, 2010",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m7",
+        "role": "child_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_79a31fb168da"
+    },
+    "clm_9a4aee732e50": {
+      "id": "clm_9a4aee732e50",
+      "document": "doc_74372224ab1a59f8",
+      "page": 2,
+      "quote": "The Grantors are the parents of three (3) children: HENRY R. BRADLEY, born May 9, 2003; OLIVIA C. BRADLEY, born October 30, 2006; and SAMUEL T. BRADLEY, born January 17, 2010",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m7",
+        "role": "child_of",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_b2b89d0972c4"
+    },
+    "clm_376f27a75072": {
+      "id": "clm_376f27a75072",
+      "document": "doc_74372224ab1a59f8",
+      "page": 3,
+      "quote": "The beneficiaries of the Trust are the Children and their descendants. On the date of this Agreement the Children are HENRY R. BRADLEY, OLIVIA C. BRADLEY and SAMUEL T. BRADLEY.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "beneficiary",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_7b41c891ccfa"
+    },
+    "clm_1b87ba02e996": {
+      "id": "clm_1b87ba02e996",
+      "document": "doc_74372224ab1a59f8",
+      "page": 3,
+      "quote": "The beneficiaries of the Trust are the Children and their descendants. On the date of this Agreement the Children are HENRY R. BRADLEY, OLIVIA C. BRADLEY and SAMUEL T. BRADLEY.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "beneficiary",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_066d1496eb67"
+    },
+    "clm_db778cbc8b22": {
+      "id": "clm_db778cbc8b22",
+      "document": "doc_74372224ab1a59f8",
+      "page": 3,
+      "quote": "The beneficiaries of the Trust are the Children and their descendants. On the date of this Agreement the Children are HENRY R. BRADLEY, OLIVIA C. BRADLEY and SAMUEL T. BRADLEY.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m7",
+        "role": "beneficiary",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_acab4e3709ea"
+    },
+    "clm_bb2d449862cd": {
+      "id": "clm_bb2d449862cd",
+      "document": "doc_74372224ab1a59f8",
+      "page": 10,
+      "quote": "Custodial account established with J.P. Morgan Securities LLC, Account No. XXX-X7731-0, in the name of the Bradley Descendants Irrevocable Trust.",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m10",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_dc83241a5e81"
+    },
+    "clm_7db349f669bc": {
+      "id": "clm_7db349f669bc",
+      "document": "doc_50ec991c74825441",
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "person",
+        "name": "ROBERT W BRADLEY II",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_a58dbba24139"
+    },
+    "clm_f94417b03b38": {
+      "id": "clm_f94417b03b38",
+      "document": "doc_50ec991c74825441",
+      "page": 1,
+      "quote": "Holder Account Number\nC0004417220",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "account",
+        "name": "Equiniti Investor Direct Choice Plan ...7220",
+        "identifiers": {
+          "account_last4": "7220",
+          "custodian": "Equiniti Trust Company, LLC"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_72dd8811a26f"
+    },
+    "clm_ffedf71f873c": {
+      "id": "clm_ffedf71f873c",
+      "document": "doc_50ec991c74825441",
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II\n4410 QUAIL HOLLOW RD\nCHARLOTTE NC 28210\n\nHolder Account Number\nC0004417220",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_fef185957808"
+    },
+    "clm_9927b3247c02": {
+      "id": "clm_9927b3247c02",
+      "document": "doc_75280e3a42068f7e",
+      "page": 1,
+      "quote": "BRADLEY CAPITAL PARTNERS, LP",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "company",
+        "name": "BRADLEY CAPITAL PARTNERS, LP",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "co_fd78e7b00cb1"
+    },
+    "clm_d82cbb2dda19": {
+      "id": "clm_d82cbb2dda19",
+      "document": "doc_75280e3a42068f7e",
+      "page": 2,
+      "quote": "PORTFOLIO NUMBER : 448-17740-2",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "account",
+        "name": "J.P. Morgan Brokerage ...7402",
+        "identifiers": {
+          "custodian": "J.P. Morgan Securities LLC",
+          "account_last4": "7402"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_71a8f2b25cfe"
+    },
+    "clm_3b40446e3c3f": {
+      "id": "clm_3b40446e3c3f",
+      "document": "doc_75280e3a42068f7e",
+      "page": 1,
+      "quote": "BRADLEY CAPITAL PARTNERS, LP\n200 S TRYON ST STE 1450\nCHARLOTTE NC 28202\n\nAccount No: XXX-X7740-2",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_cc1e16291ad4"
+    },
+    "clm_f58f8957c57a": {
+      "id": "clm_f58f8957c57a",
+      "document": "doc_d539adf15d2d871a",
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "trust",
+        "name": "BRADLEY DESCENDANTS IRREVOCABLE TRUST",
+        "identifiers": {
+          "trust_date": "2016-09-14"
+        }
+      },
+      "verified": true,
+      "resolved_to": "tru_24f4ada442b9"
+    },
+    "clm_dcb1a37726b8": {
+      "id": "clm_dcb1a37726b8",
+      "document": "doc_d539adf15d2d871a",
+      "page": 1,
+      "quote": "REBECCA L. BRADLEY",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "REBECCA L. BRADLEY",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_1afe5f8120d9"
+    },
+    "clm_a70aa0a91b2f": {
+      "id": "clm_a70aa0a91b2f",
+      "document": "doc_d539adf15d2d871a",
+      "page": 2,
+      "quote": "BRADLEY DESCENDANTS IRREV TR BRKG 448-17732-8",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "account",
+        "name": "J.P. Morgan Brokerage ...7328",
+        "identifiers": {
+          "account_last4": "7328",
+          "custodian": "J.P. Morgan"
+        }
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_44e5c2ddd961": {
+      "id": "clm_44e5c2ddd961",
+      "document": "doc_d539adf15d2d871a",
+      "page": 2,
+      "quote": "BRADLEY DESCENDANTS IRREV TR 448-17733-6",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "account",
+        "name": "J.P. Morgan Trust ...7336",
+        "identifiers": {
+          "account_last4": "7336",
+          "custodian": "J.P. Morgan"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_9ea23822e060"
+    },
+    "clm_ba1c88a7b045": {
+      "id": "clm_ba1c88a7b045",
+      "document": "doc_d539adf15d2d871a",
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "trustee",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_e69479d6cdbc"
+    },
+    "clm_e1ab7153d544": {
+      "id": "clm_e1ab7153d544",
+      "document": "doc_d539adf15d2d871a",
+      "page": 7,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": null
+    },
+    "clm_45def56de2a3": {
+      "id": "clm_45def56de2a3",
+      "document": "doc_d539adf15d2d871a",
+      "page": 11,
+      "quote": "BRADLEY DESCENDANTS IRREVOCABLE TRUST U/A DTD 09/14/2016 REBECCA L. BRADLEY, TRUSTEE",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m4",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_c336d52297c7"
+    },
+    "clm_afc3f9dc02f4": {
+      "id": "clm_afc3f9dc02f4",
+      "document": "doc_9fa2a03d74d7019b",
+      "page": 1,
+      "quote": "BRADLEY II, ROBERT W",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "person",
+        "name": "Robert W Bradley II",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_a58dbba24139"
+    },
+    "clm_7e250b185d9c": {
+      "id": "clm_7e250b185d9c",
+      "document": "doc_9fa2a03d74d7019b",
+      "page": 1,
+      "quote": "BRADLEY, CATHERINE M",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "Catherine M Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_315721e1041b"
+    },
+    "clm_06464b9a7e7c": {
+      "id": "clm_06464b9a7e7c",
+      "document": "doc_9fa2a03d74d7019b",
+      "page": 1,
+      "quote": "BRADLEY II, ROBERT W & BRADLEY, CATHERINE M - JTWROS Account Summary - #6612-0094\nBrokerage",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "account",
+        "name": "Schwab JTWROS Brokerage ...0094",
+        "identifiers": {
+          "account_last4": "0094",
+          "custodian": "Charles Schwab"
+        }
+      },
+      "verified": true,
+      "resolved_to": "acc_70c6283df5db"
+    },
+    "clm_0ce8fae7968c": {
+      "id": "clm_0ce8fae7968c",
+      "document": "doc_9fa2a03d74d7019b",
+      "page": 1,
+      "quote": "BRADLEY II, ROBERT W & BRADLEY, CATHERINE M - JTWROS Account Summary - #6612-0094",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_c605e8a35304"
+    },
+    "clm_8bec589ce3dc": {
+      "id": "clm_8bec589ce3dc",
+      "document": "doc_9fa2a03d74d7019b",
+      "page": 1,
+      "quote": "BRADLEY II, ROBERT W & BRADLEY, CATHERINE M - JTWROS Account Summary - #6612-0094",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "owner",
+        "object_ref": "m3",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_40218d341721"
+    },
+    "clm_56106c0ae977": {
+      "id": "clm_56106c0ae977",
+      "document": "doc_8df98dc7d088b945",
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "person",
+        "name": "Robert W Bradley II",
+        "identifiers": {}
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_2028a8580676": {
+      "id": "clm_2028a8580676",
+      "document": "doc_8df98dc7d088b945",
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II\nCHARLES SCHWAB & CO INC CUST\nROTH CONTRIBUTORY IRA",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "account",
+        "name": "Schwab Roth Contributory IRA ...8820",
+        "identifiers": {
+          "custodian": "Charles Schwab & Co., Inc.",
+          "account_last4": "8820"
+        }
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_b6b69f948c1b": {
+      "id": "clm_b6b69f948c1b",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Primary Beneficiaries: Catherine M Bradley (100.00%)",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "person",
+        "name": "Catherine M Bradley",
+        "identifiers": {}
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_9e2d047bbbd5": {
+      "id": "clm_9e2d047bbbd5",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Henry R Bradley (33.34%)",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "person",
+        "name": "Henry R Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_dcc17503f359"
+    },
+    "clm_2e57c163d9a9": {
+      "id": "clm_2e57c163d9a9",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Olivia C Bradley (33.33%)",
+      "assertion": {
+        "type": "mention",
+        "ref": "m5",
+        "kind": "person",
+        "name": "Olivia C Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_b42d4f2f6850"
+    },
+    "clm_290da3d0bd92": {
+      "id": "clm_290da3d0bd92",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Samuel T Bradley (33.33%)",
+      "assertion": {
+        "type": "mention",
+        "ref": "m6",
+        "kind": "person",
+        "name": "Samuel T Bradley",
+        "identifiers": {}
+      },
+      "verified": true,
+      "resolved_to": "per_36cf94a53450"
+    },
+    "clm_738b82842daf": {
+      "id": "clm_738b82842daf",
+      "document": "doc_8df98dc7d088b945",
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II\nCHARLES SCHWAB & CO INC CUST\nROTH CONTRIBUTORY IRA",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "owner",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_e0a45775c4c9": {
+      "id": "clm_e0a45775c4c9",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Primary Beneficiaries: Catherine M Bradley (100.00%)",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "beneficiary",
+        "object_ref": "m2",
+        "qualifiers": {
+          "type": "Primary",
+          "share": "100.00%"
+        },
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": false,
+      "resolved_to": null
+    },
+    "clm_e767bfc54274": {
+      "id": "clm_e767bfc54274",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Contingent Beneficiaries: Henry R Bradley (33.34%)",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m4",
+        "role": "beneficiary",
+        "object_ref": "m2",
+        "qualifiers": {
+          "type": "Contingent",
+          "share": "33.34%"
+        },
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": null
+    },
+    "clm_9e7c8e798d3a": {
+      "id": "clm_9e7c8e798d3a",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Olivia C Bradley (33.33%)",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "beneficiary",
+        "object_ref": "m2",
+        "qualifiers": {
+          "type": "Contingent",
+          "share": "33.33%"
+        },
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": null
+    },
+    "clm_05360588c1c3": {
+      "id": "clm_05360588c1c3",
+      "document": "doc_8df98dc7d088b945",
+      "page": 2,
+      "quote": "Samuel T Bradley (33.33%)",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m6",
+        "role": "beneficiary",
+        "object_ref": "m2",
+        "qualifiers": {
+          "type": "Contingent",
+          "share": "33.33%"
+        },
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": null
+    },
+    "clm_58bbcfbb1a2a": {
+      "id": "clm_58bbcfbb1a2a",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "Your first name and middle initial ROBERT W Last name BRADLEY II",
+      "assertion": {
+        "type": "mention",
+        "ref": "m1",
+        "kind": "person",
+        "name": "ROBERT W BRADLEY II",
+        "identifiers": {
+          "ssn_last4": "2087"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_a58dbba24139"
+    },
+    "clm_19ffa321889c": {
+      "id": "clm_19ffa321889c",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "If joint return, spouse's first name and middle initial CATHERINE M Last name BRADLEY",
+      "assertion": {
+        "type": "mention",
+        "ref": "m2",
+        "kind": "person",
+        "name": "CATHERINE M BRADLEY",
+        "identifiers": {
+          "ssn_last4": "3312"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_315721e1041b"
+    },
+    "clm_71772354df60": {
+      "id": "clm_71772354df60",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "HENRY R BRADLEY 666-83-5521 SON",
+      "assertion": {
+        "type": "mention",
+        "ref": "m3",
+        "kind": "person",
+        "name": "HENRY R BRADLEY",
+        "identifiers": {
+          "ssn_last4": "5521"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_dcc17503f359"
+    },
+    "clm_bdbe28909746": {
+      "id": "clm_bdbe28909746",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "OLIVIA C BRADLEY 666-72-0145 DAUGHTER",
+      "assertion": {
+        "type": "mention",
+        "ref": "m4",
+        "kind": "person",
+        "name": "OLIVIA C BRADLEY",
+        "identifiers": {
+          "ssn_last4": "0145"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_b42d4f2f6850"
+    },
+    "clm_d2fe7ece6e86": {
+      "id": "clm_d2fe7ece6e86",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "SAMUEL T BRADLEY 666-19-44028 SON",
+      "assertion": {
+        "type": "mention",
+        "ref": "m5",
+        "kind": "person",
+        "name": "SAMUEL T BRADLEY",
+        "identifiers": {
+          "ssn_last4": "4028"
+        }
+      },
+      "verified": true,
+      "resolved_to": "per_36cf94a53450"
+    },
+    "clm_d4f4283202e7": {
+      "id": "clm_d4f4283202e7",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "If joint return, spouse's first name and middle initial CATHERINE M Last name BRADLEY",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m2",
+        "role": "spouse_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_adfb5e9479fa"
+    },
+    "clm_940383083de5": {
+      "id": "clm_940383083de5",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "If joint return, spouse's first name and middle initial CATHERINE M Last name BRADLEY",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m1",
+        "role": "spouse_of",
+        "object_ref": "m2",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_3d064f48b1af"
+    },
+    "clm_4cce927b4627": {
+      "id": "clm_4cce927b4627",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "HENRY R BRADLEY 666-83-5521 SON",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m3",
+        "role": "child_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_24d350a1dbcc"
+    },
+    "clm_c3492cdaa526": {
+      "id": "clm_c3492cdaa526",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "OLIVIA C BRADLEY 666-72-0145 DAUGHTER",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m4",
+        "role": "child_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_4fa744a1c157"
+    },
+    "clm_6d078470e2b5": {
+      "id": "clm_6d078470e2b5",
+      "document": "doc_59a3fcbcefb40fa4",
+      "page": 1,
+      "quote": "SAMUEL T BRADLEY 666-19-44028 SON",
+      "assertion": {
+        "type": "role",
+        "subject_ref": "m5",
+        "role": "child_of",
+        "object_ref": "m1",
+        "qualifiers": {},
+        "ended": false,
+        "effective_from": null,
+        "effective_to": null
+      },
+      "verified": true,
+      "resolved_to": "rol_79a31fb168da"
+    }
+  },
+  "questions": {
+    "q_6e45cfe46c6a": {
+      "id": "q_6e45cfe46c6a",
+      "kind": "unverified_quote",
+      "summary": "Some extracted facts quote text that could not be found in the document. Check the held claims against the original.",
+      "candidates": [],
+      "blocking_claims": [
+        "clm_3b2b12864c8f",
+        "clm_c1f98b2c59dd",
+        "clm_704c72c0b2b5",
+        "clm_a8a1404dcde6",
+        "clm_d6bdf69b0283",
+        "clm_0d79d2e04a60",
+        "clm_9191be10fbee"
+      ],
+      "raised_by": "doc_76c4bf775b34f56a",
+      "status": "open",
+      "resolution": null
+    },
+    "q_d40db0974cf4": {
+      "id": "q_d40db0974cf4",
+      "kind": "unverified_quote",
+      "summary": "Some extracted facts quote text that could not be found in the document. Check the held claims against the original.",
+      "candidates": [],
+      "blocking_claims": [
+        "clm_a70aa0a91b2f",
+        "clm_e1ab7153d544"
+      ],
+      "raised_by": "doc_d539adf15d2d871a",
+      "status": "open",
+      "resolution": null
+    },
+    "q_ff505e6962d2": {
+      "id": "q_ff505e6962d2",
+      "kind": "unreadable",
+      "summary": "Portfolio number 448-17731-0 (masked as XXX-X7731-0 on pages 1-5) represents the master relationship/summary portfolio encompassing individual portfolios 448-17732-8 and 448-17733-6.",
+      "candidates": [],
+      "blocking_claims": [],
+      "raised_by": "doc_d539adf15d2d871a",
+      "status": "open",
+      "resolution": null
+    },
+    "q_7ba2996a5f77": {
+      "id": "q_7ba2996a5f77",
+      "kind": "unreadable",
+      "summary": "Account last4 values 7328 and 7336 reflect the last 4 numeric digits of portfolio numbers 448-17732-8 and 448-17733-6 (or 7732 and 7733 if the trailing check/sub-account digit after the hyphen is excluded).",
+      "candidates": [],
+      "blocking_claims": [],
+      "raised_by": "doc_d539adf15d2d871a",
+      "status": "open",
+      "resolution": null
+    },
+    "q_d14a3cc231b2": {
+      "id": "q_d14a3cc231b2",
+      "kind": "unverified_quote",
+      "summary": "Some extracted facts quote text that could not be found in the document. Check the held claims against the original.",
+      "candidates": [],
+      "blocking_claims": [
+        "clm_56106c0ae977",
+        "clm_2028a8580676",
+        "clm_b6b69f948c1b",
+        "clm_738b82842daf",
+        "clm_e0a45775c4c9",
+        "clm_e767bfc54274",
+        "clm_9e7c8e798d3a",
+        "clm_05360588c1c3"
+      ],
+      "raised_by": "doc_8df98dc7d088b945",
+      "status": "open",
+      "resolution": null
+    },
+    "q_3a95e015b3e8": {
+      "id": "q_3a95e015b3e8",
+      "kind": "unreadable",
+      "summary": "Samuel T Bradley's Social Security Number is printed with 10 digits (666-19-44028); ssn_last4 recorded as 4028.",
+      "candidates": [],
+      "blocking_claims": [],
+      "raised_by": "doc_59a3fcbcefb40fa4",
+      "status": "open",
+      "resolution": null
+    }
+  }
+}

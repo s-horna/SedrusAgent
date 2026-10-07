@@ -1,0 +1,136 @@
+{
+  "_file": "core/TEST Bradley Family 1040.pdf",
+  "_format": "single page printed from tax software (vector text, Courier entries); page 21 of a larger return printout",
+  "doc_type": "tax_return",
+  "doc_date": "2024-12-31",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "person",
+      "name": "ROBERT W BRADLEY II",
+      "identifiers": {
+        "ssn_last4": "2087"
+      },
+      "page": 1,
+      "quote": "ROBERT W Last name BRADLEY II"
+    },
+    {
+      "ref": "m2",
+      "kind": "person",
+      "name": "CATHERINE M BRADLEY",
+      "identifiers": {
+        "ssn_last4": "3312"
+      },
+      "page": 1,
+      "quote": "CATHERINE M Last name BRADLEY"
+    },
+    {
+      "ref": "m3",
+      "kind": "person",
+      "name": "HENRY R BRADLEY",
+      "identifiers": {
+        "ssn_last4": "5521"
+      },
+      "page": 1,
+      "quote": "HENRY R BRADLEY ... SON"
+    },
+    {
+      "ref": "m4",
+      "kind": "person",
+      "name": "OLIVIA C BRADLEY",
+      "identifiers": {
+        "ssn_last4": "0145"
+      },
+      "page": 1,
+      "quote": "OLIVIA C BRADLEY ... DAUGHTER"
+    },
+    {
+      "ref": "m5",
+      "kind": "person",
+      "name": "SAMUEL T BRADLEY",
+      "identifiers": {},
+      "page": 1,
+      "quote": "SAMUEL T BRADLEY ... SON"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "spouse_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "Married filing jointly (even if only one had income)"
+    },
+    {
+      "subject_ref": "m3",
+      "role": "child_of",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "HENRY R BRADLEY ... SON"
+    },
+    {
+      "subject_ref": "m3",
+      "role": "child_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "HENRY R BRADLEY ... SON"
+    },
+    {
+      "subject_ref": "m4",
+      "role": "child_of",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "OLIVIA C BRADLEY ... DAUGHTER"
+    },
+    {
+      "subject_ref": "m4",
+      "role": "child_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "OLIVIA C BRADLEY ... DAUGHTER"
+    },
+    {
+      "subject_ref": "m5",
+      "role": "child_of",
+      "object_ref": "m1",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "SAMUEL T BRADLEY ... SON"
+    },
+    {
+      "subject_ref": "m5",
+      "role": "child_of",
+      "object_ref": "m2",
+      "qualifiers": {},
+      "page": 1,
+      "quote": "SAMUEL T BRADLEY ... SON"
+    }
+  ],
+  "unreadable_notes": [
+    "Dependent SAMUEL T BRADLEY's SSN is printed with 10 digits instead of 9 - malformed; no reliable ssn_last4."
+  ],
+  "_traps": [
+    "doc_date: the return is for tax year 2024 (no signature date on this page); 2024-12-31 used as the as-of date.",
+    "SAMUEL T BRADLEY's SSN is malformed (10 digits), so he has no identifier here: name-only evidence.",
+    "First name and last name are in separate boxes ('ROBERT W' / 'BRADLEY II'); the suffix sits in the last-name box.",
+    "SSNs are printed in full; only the last 4 should be stored. Quotes are stored too, so the gold quotes elide the SSN column ('OLIVIA C BRADLEY ... DAUGHTER'); a quote that copies the row verbatim leaks the full SSN into state."
+  ],
+  "_expected_questions": [
+    {
+      "kind": "unreadable",
+      "about": "Malformed SSN for SAMUEL T BRADLEY."
+    }
+  ],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 12,
+    "quotes": 12,
+    "pages": 1,
+    "pages_without_text": []
+  }
+}

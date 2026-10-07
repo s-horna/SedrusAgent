@@ -1,0 +1,131 @@
+{
+  "_file": "core/Schwab Robert Bradley Roth x2290.pdf",
+  "_format": "scanned portrait statement, corrupted OCR text layer, 8 pages (6 boilerplate)",
+  "doc_type": "custodian_statement",
+  "doc_date": "2025-09-30",
+  "mentions": [
+    {
+      "ref": "m1",
+      "kind": "person",
+      "name": "ROBERT W BRADLEY II",
+      "identifiers": {},
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II CHARLES SCHWAB & CO INC CUST ROTH CONTRIBUTORY IRA"
+    },
+    {
+      "ref": "m2",
+      "kind": "account",
+      "name": "Schwab Roth IRA ...8820",
+      "identifiers": {
+        "custodian": "Schwab",
+        "account_last4": "8820"
+      },
+      "page": 1,
+      "quote": "Bradley II, Robert - Roth IRA Account Summary - #4471-8820"
+    },
+    {
+      "ref": "m3",
+      "kind": "person",
+      "name": "Catherine M Bradley",
+      "identifiers": {},
+      "page": 2,
+      "quote": "Primary Beneficiaries: Catherine M Bradley (100.00%)"
+    },
+    {
+      "ref": "m4",
+      "kind": "person",
+      "name": "Henry R Bradley",
+      "identifiers": {},
+      "page": 2,
+      "quote": "Contingent Beneficiaries: Henry R Bradley (33.34%)"
+    },
+    {
+      "ref": "m5",
+      "kind": "person",
+      "name": "Olivia C Bradley",
+      "identifiers": {},
+      "page": 2,
+      "quote": "Olivia C Bradley (33.33%)"
+    },
+    {
+      "ref": "m6",
+      "kind": "person",
+      "name": "Samuel T Bradley",
+      "identifiers": {},
+      "page": 2,
+      "quote": "Samuel T Bradley (33.33%)"
+    }
+  ],
+  "claims": [
+    {
+      "subject_ref": "m1",
+      "role": "owner",
+      "object_ref": "m2",
+      "qualifiers": {
+        "account_type": "Roth IRA"
+      },
+      "page": 1,
+      "quote": "ROBERT W BRADLEY II CHARLES SCHWAB & CO INC CUST ROTH CONTRIBUTORY IRA"
+    },
+    {
+      "subject_ref": "m3",
+      "role": "beneficiary",
+      "object_ref": "m2",
+      "qualifiers": {
+        "designation": "primary",
+        "share": "100.00%"
+      },
+      "page": 2,
+      "quote": "Primary Beneficiaries: Catherine M Bradley (100.00%)"
+    },
+    {
+      "subject_ref": "m4",
+      "role": "beneficiary",
+      "object_ref": "m2",
+      "qualifiers": {
+        "designation": "contingent",
+        "share": "33.34%"
+      },
+      "page": 2,
+      "quote": "Contingent Beneficiaries: Henry R Bradley (33.34%)"
+    },
+    {
+      "subject_ref": "m5",
+      "role": "beneficiary",
+      "object_ref": "m2",
+      "qualifiers": {
+        "designation": "contingent",
+        "share": "33.33%"
+      },
+      "page": 2,
+      "quote": "Olivia C Bradley (33.33%)"
+    },
+    {
+      "subject_ref": "m6",
+      "role": "beneficiary",
+      "object_ref": "m2",
+      "qualifiers": {
+        "designation": "contingent",
+        "share": "33.33%"
+      },
+      "page": 2,
+      "quote": "Samuel T Bradley (33.33%)"
+    }
+  ],
+  "unreadable_notes": [],
+  "_traps": [
+    "Filename says x2290 but the account number is 4471-8820 - trust the document, not the filename.",
+    "'CHARLES SCHWAB & CO INC CUST' is the IRA custodian, not a household company and not an account holder.",
+    "Beneficiaries (owner vs beneficiary distinction) - the spouse is a beneficiary, not a holder.",
+    "Noise: 'State (SC) Withholding Election' although the client lives in NC.",
+    "Name formats: 'ROBERT W BRADLEY II' and 'Bradley II, Robert' (last-name-first, no middle initial)."
+  ],
+  "_expected_questions": [],
+  "_text_layer": {
+    "text_layer": true,
+    "quotes_in_text_layer": 7,
+    "quotes": 11,
+    "pages": 8,
+    "pages_without_text": []
+  }
+}
